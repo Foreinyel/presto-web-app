@@ -1,0 +1,64 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <script src="qrgen.min.js"></script>
+</head>
+<body>
+<div>
+  <div style="background: white;">
+    <div id="QRCodeImg" style="width: 200px; height: 200px; margin: 4rem auto;">
+      <!--<div id="QRCodeImg" style="width: 7rem; height: 7rem; margin: 4rem auto;">-->
+    </div>
+    <div id="QRCodeDesc" style="text-align: center;">
+      长按二维码，关注公众号
+    </div>
+  </div>
+</div>
+<script>
+  var checkWechatVersion = function(){
+    var wechatInfo = navigator.userAgent.match(/MicroMessenger\/([\d\.]+)/i);
+    if (wechatInfo) {
+      if (wechatInfo[1] > "5.0") {
+        return true;
+      }
+    }
+    return false;
+  };
+
+  var getStorage = function(key){
+    return window.JSON.parse(window.localStorage.getItem(key));
+  };
+
+  var elem = document.getElementById('QRCodeImg');
+  var screenWidth = window.screen.width;
+  //var width = screenWidth * 0.8;
+  //var height = width;
+  var width = 200;
+  var height = 200;
+  if (checkWechatVersion() || true) {
+    /*var qrcode = new QRCode(elem, {
+     width: width,//设置宽高
+     height: height
+     });
+     var followUrl = Storage.get('followUrl');
+     qrcode.makeCode(followUrl);*/
+    var followUrl = getStorage('followUrl');
+    var canvas = qrgen.canvas({
+      //data: "http://weixin.qq.com/q/MkQvDoTmydCw7VZmGGzE",
+      data: followUrl,
+      size:200
+    });
+    var image = new Image();
+    image.src = canvas.toDataURL("image/png");
+    elem.appendChild(image);
+  } else {
+    $('#QRCodeDesc').html('本系统暂不支持微信5.0以下的版本！请先升级您的微信版本');
+  }
+</script>
+</body>
+</html>
+

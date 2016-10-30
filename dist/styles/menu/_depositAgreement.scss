@@ -1,0 +1,20 @@
+.depositAgreement-content{
+  background-color:$g-bg-white-color;
+  padding: 1.5rem 0.75rem 1.05rem;
+  font-family: PingFangSC-Light !important;
+  p{
+    color: #444A59;
+    line-height: 1.015rem;
+    font-size: 0.7rem;
+    margin-bottom:1.15rem ;
+    text-align: justify;
+    &:last-child{
+      margin-bottom: 0;
+    }
+    b{
+      font-family: PingFangSC-Regular !important;
+      font-weight: normal;
+      display: block;
+    }
+  }
+}

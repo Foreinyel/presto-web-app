@@ -1,0 +1,30 @@
+<ion-view view-title="栖家" doc-title="栖家" hide-back-button="true" hide-nav-bar="true">
+  <ion-content class="login-content" overflow-scroll="true" style="overflow: hidden;">
+    <!--<form name="loginForm" style="    margin-top: 5rem;">-->
+      <div class="content" style="margin-top: 5rem;">
+        <div class="item item-input login-item">
+          <label style="" for="phoneNumberInput" >手机号</label>
+          <input id="phoneNumberInput" type="tel" name="phoneNumber" ng-model="userLogin.mobile" placeholder="请输入手机号">
+          <button ng-click="smsCodeObject.hitBtn()" ng-disabled="smsCodeObject.disableBtn">{{smsCodeObject.btnText}}</button>
+        </div>
+        <div class="item item-input login-item">
+          <label for="validationCodeInput">验证码</label>
+          <input id="validationCodeInput" type="number" name="validationCode" ng-model="userLogin.passwd" placeholder="请输入验证码">
+        </div>
+        <div class="item item-input login-item">
+          <label for="invitationCodeInput">邀请码</label>
+          <input id="invitationCodeInput" type="text" name="invitationCode" ng-model="userLogin.inviteCode" placeholder="(选填)">
+        </div>
+      </div>
+    <!--</form>-->
+
+    <div class="login-laws-div">
+      <!--<p>继续使用代表您已阅读并同意栖家集团相关<br/>《<a href="" ng-click="goAgreement()">用户协议条款</a>》</p>-->
+    </div>
+
+    <div class="login-begin2use-div">
+      <!--<input type="button" ng-dblclick="login()" ng-click="login()" value="开始使用" ng-disabled="disableLoginButton">-->
+      <button ng-dblclick="login()" ng-click="login()" value="开始使用" ng-disabled="disableLoginButton">开始使用</button>
+    </div>
+  </ion-content>
+</ion-view>

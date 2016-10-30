@@ -1,0 +1,21 @@
+.questions-content {
+  background-color: $g-bg-white-color;
+  padding: 1.5rem 0.75rem 1.25rem;
+  p {
+    font-family: PingFangSC-Light !important;
+    font-size: 0.70rem;
+    color: rgba(31, 31, 33, 1);
+    margin-bottom: 1.25rem;
+    text-align: justify;
+  }
+  p {
+    line-height: 1.25rem;
+    b {
+      font-family: PingFangSC-Regular !important;
+      font-size: 0.75rem;
+      line-height: 1.25rem;
+      font-weight: normal;
+      display: inline-block;
+    }
+  }
+}

@@ -1,0 +1,60 @@
+.about-content{
+
+  background-color: white;
+
+  .ab-logo{
+    margin-top:4rem;
+    width:100%;
+    text-align: center;
+    img{
+      margin:0 auto;
+      width:76px;
+      height:63px;
+    }
+    p{
+      margin: .84rem 0 0 0;
+      font-family:PingFangSC-Light !important;
+      color: rgba(155, 155, 155, 1);
+      font-size:0.65rem;
+      line-height:0.925rem;
+    }
+  }
+
+  .ab-us-div{
+    margin-top: 2.125rem;
+    padding-left:1.425rem;
+    padding-right:1.425rem;
+    .ab-line-div{
+      padding:0.425rem 0;
+      padding-right:1.1rem;
+      position: relative;
+      border-bottom:1px solid rgba(216, 216, 216, 1);
+      span{
+        font-family:PingFangSC-Light !important;
+        font-size:0.65rem;
+        line-height:0.925rem;
+      }
+      .ab-text-left{
+        color:rgba(82, 82, 82, 1);
+      }
+      .ab-text-right{
+        color: rgba(74, 74, 74, 1);
+        float: right;
+      }
+      
+      .goto-left{
+        background-image: url("../images/icons/arrow@2x.png");
+        -webkit-background-size:contain;
+        background-size:contain;
+        background-repeat:no-repeat;
+        width:0.35rem;
+        height:0.6rem;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        margin-top: -0.3rem;
+      }
+    }
+  }
+}

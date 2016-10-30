@@ -1,0 +1,146 @@
+.menu-fill-btn {
+  background-image: url("../images/fill/Fill_92@2x.png");
+  background-repeat: no-repeat;
+  display: block;
+  width: 0.8rem;
+  height: 0.8rem;
+  background-size: contain;
+  margin-right: 0.7rem;
+  margin-top: 0.3rem;
+
+  .menu-fill-a{
+    width: 2.8rem;
+    height: 2.8rem;
+    margin: -0.9rem;
+  }
+}
+.view  .menu{
+  width: 15.25rem;
+}
+.menu-ion-content {
+
+  font-family: PingFangSC-Regular !important;
+  font-size: 0.65rem;
+  line-height: 0.925rem;
+  color: $g-bg-color;
+
+  padding-left: 2.05rem;
+  //padding-top: 2.6rem;
+  padding-top: 1.5rem;
+  .menu-head-pic {
+
+    .menu-head-img {
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 100%;
+      border: none;
+      display: block;
+      margin-bottom: 0.8rem;
+    }
+  }
+  .menu-phoneNumber {
+
+    margin-top: 0.8rem;
+    p {
+      margin: 0;
+      font-family: $g-fm-OpenSans;
+    }
+  }
+  .menu-balance {
+    margin-top: 1.95rem;
+  }
+  .menu-balance, .menu-address, .menu-cmn-problem, .menu-user-agreement, .menu-coupon, .menu-hot-line {
+    //margin-top:2rem;
+    line-height: 2.875rem;
+    height: 2.875rem;
+    .tel{
+      color:$g-bg-color;
+      text-decoration: none;
+    }
+  }
+
+  .menu-coupon {
+    width: 180px;
+    span {
+      float: right;
+      display: block;
+      background: $g-btn-blue;
+      color: $g-bg-white-color;
+      text-align: center;
+      margin-top: 0.8625rem;
+      font-weight: normal;
+      border-radius:11px;
+      //min-width: 1.15rem;
+      //min-height: 1.15rem;
+      font-size: 0.5rem;
+      line-height: 17.4375px !important;
+    }
+  }
+  .menu-division {
+    border-bottom: 1px solid $g-common-bottom-line;
+    width: 180px;
+  }
+  .menu-about-us {
+    line-height: 2.125rem;
+    height: 2.125rem;
+    font-family: PingFangSC-Light !important;
+    color: $g-common-btn-border-line;
+  }
+  .menu-logout {
+    margin-top: 1rem;
+    padding-top: 1.1875rem;
+    padding-bottom: 1rem;
+    .logout-arrow-right{
+      margin-right: 0.61rem;
+      background-image: url("../images/icons/Logout@2x.png");
+      background-repeat: no-repeat;
+      display: inline-block;
+      background-size: contain;
+      width: 0.8rem;
+      height: 0.8rem;
+      line-height: 0.8rem;
+      vertical-align: middle;
+      background-size: contain;
+    }
+  }
+}
+
+.banner-modal-view {
+  //background-color: rgba(50, 55, 66, 0.9);
+
+  .banner-modal-content {
+    width: 13.8rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 7.35rem;
+
+    .banner-content-div{
+      height:19.8rem;
+      background: #fff;
+    }
+
+    .banner-close-btn {
+
+      text-align: center;
+      padding-top: 2rem;
+    }
+  }
+
+}
+
+.menu-swiper-div{
+  //position: absolute;
+  bottom: 1rem;
+  width: 100%;
+  height: 1rem;
+  text-align: center;
+  .menu-swiper-dot{
+    height: 8px;
+    width: 8px;
+    display: inline-block;
+    /* background-color: white; */
+    border-radius: 100%;
+    border: 1px solid #fff;
+    margin-left: 3px;
+  }
+}
