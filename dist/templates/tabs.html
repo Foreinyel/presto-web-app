@@ -1,19 +1,14 @@
-<ion-tabs chg-tab class="tabs-icon-left "
-          ng-class="{'ion-tab-hide-shadow':ifHideBoxShadow,'tabs-item-hide':!isShowTabs}"
->
+<ion-tabs class="tabs-icon-left ">
     <ion-tab title="首页" icon-on="ion" ng-click="goHomeTab()">
         <ion-nav-view name="tab-home"></ion-nav-view>
     </ion-tab>
-    <ion-tab title="订单" icon-on="ion" ng-click="goMyOrdersTab()">
+    <ion-tab title="发现" icon-on="ion" ng-click="goMyOrdersTab()">
         <ion-nav-view name="tab-orders"></ion-nav-view>
     </ion-tab>
-    <ion-tab title="活动" icon-on="ion" ng-click="goMarketingsTab()">
+    <ion-tab title="书条" icon-on="ion" ng-click="goMarketingsTab()">
         <ion-nav-view name="tab-marketings"></ion-nav-view>
     </ion-tab>
-    <ion-tab title="年卡" ng-click="goCardsTab()">
+    <ion-tab title="我" ng-click="goCardsTab()">
         <ion-nav-view name="tab-cards"></ion-nav-view>
-    </ion-tab>
-    <ion-tab title="我的" ng-click="goMineTab()">
-        <ion-nav-view name="tab-mine"></ion-nav-view>
     </ion-tab>
 </ion-tabs>

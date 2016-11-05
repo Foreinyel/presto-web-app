@@ -1,0 +1,19 @@
+<ion-view view-title="首页" doc-title="首页" hide-back-button="true">
+  <ion-content class="home-content">
+    <label class="item item-input " style="border-width:0;padding-left: 8px;">
+
+      <input type="text" class="home-search-bar" ng-readonly="true"
+             placeholder="搜索书名，作者或ISBN" style="padding-right: 10px;width:180px;">
+      <i class="icon ion-search placeholder-icon"></i>
+    </label>
+
+    <div class="i-want-panel">
+      <div class="i-want-xiyue">
+        <p>我想惜阅</p>
+      </div>
+      <div class="i-want-zhishu" ng-click="goPlantBooks()">
+        <p>我要植书</p>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

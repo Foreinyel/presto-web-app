@@ -35,12 +35,53 @@ angular.module('presto', ['ionic', 'presto.controllers', 'presto.directives', 'p
 
 
     $stateProvider
-    //登录
+
+      .state('tabs', {
+        url: '/tabs',
+        templateUrl: 'templates/tabs.html',
+        controller: 'TabsCtrl',
+        cache: false
+      })
+
+      //首页
+      .state('tabs.home', {
+        url: '/home',
+        views: {
+          'tab-home': {
+            templateUrl: 'templates/home/home.html',
+            controller: 'HomeCtrl'
+          }
+        }
+      })
+
+      //登录
       .state('login', {
         url: '/login',
         templateUrl: 'templates/login/login.html',
         controller: 'LoginCtrl',
         cache: false
+      })
+
+      //我要植书
+      .state('tabs.plantBooks',{
+        url:'/plantBooks',
+        views:{
+          'tab-home':{
+            templateUrl:'templates/plantBooks/plantBooks.html',
+            controller:'PlantBooksCtrl'
+          }
+        }
+      })
+
+      //我要植书-选择植书方式
+      .state('tabs.plantMethods',{
+        url:'/plantMethods',
+        views:{
+          'tab-home':{
+            templateUrl:'templates/plantBooks/plantMethods.html',
+            controller:'PlantMethodsCtrl'
+          }
+        }
       })
     ;
     // if none of the above states are matched, use this as the fallback
@@ -129,7 +170,7 @@ angular.module('presto', ['ionic', 'presto.controllers', 'presto.directives', 'p
         if (url && !noCheckLoginUrl[url] && !CommonMethods.isLogin()) {
           e.preventDefault();
           //CommonToasts.showAlert('提示', '请先登录!');
-          $state.go('tabs.login');
+          $state.go('login');
           $rootScope.newState = newState;
         }
 
