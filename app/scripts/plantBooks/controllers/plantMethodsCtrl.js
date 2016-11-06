@@ -5,6 +5,11 @@
 'use strict';
 
 presto.CONTROLLERS
-  .controller('PlantMethodsCtrl',['$scope','$state',function($scope,$state){
+  .controller('PlantMethodsCtrl',['$scope','$state','Params','PlantBookMethod',function($scope,$state,Params,PlantBookMethod){
 
+
+    $scope.goManualPlant = function(){
+      Params.setParam('currentPlantMethod',PlantBookMethod.manual);
+      $state.go('tabs.manualPlant');
+    };
   }]);

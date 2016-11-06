@@ -1,4 +1,5 @@
-<ion-tabs class="tabs-icon-left ">
+<ion-tabs class="tabs-icon-left"
+          ng-class="{'tabs-item-hide':!isShowTabs}">
     <ion-tab title="首页" icon-on="ion" ng-click="goHomeTab()">
         <ion-nav-view name="tab-home"></ion-nav-view>
     </ion-tab>

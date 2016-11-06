@@ -63,25 +63,38 @@ angular.module('presto', ['ionic', 'presto.controllers', 'presto.directives', 'p
       })
 
       //我要植书
-      .state('tabs.plantBooks',{
-        url:'/plantBooks',
-        views:{
-          'tab-home':{
-            templateUrl:'templates/plantBooks/plantBooks.html',
-            controller:'PlantBooksCtrl'
+      .state('tabs.plantBooks', {
+        url: '/plantBooks',
+        views: {
+          'tab-home': {
+            templateUrl: 'templates/plantBooks/plantBooks.html',
+            controller: 'PlantBooksCtrl'
           }
         }
       })
 
       //我要植书-选择植书方式
-      .state('tabs.plantMethods',{
-        url:'/plantMethods',
-        views:{
-          'tab-home':{
-            templateUrl:'templates/plantBooks/plantMethods.html',
-            controller:'PlantMethodsCtrl'
+      .state('tabs.plantMethods', {
+        url: '/plantMethods',
+        views: {
+          'tab-home': {
+            templateUrl: 'templates/plantBooks/plantMethods.html',
+            controller: 'PlantMethodsCtrl'
           }
         }
+      })
+
+
+      //手动植书
+      .state('tabs.manualPlant', {
+        url: '/manualPlant',
+        views: {
+          'tab-home': {
+            templateUrl: 'templates/plantBooks/manualPlant.html',
+            controller: 'ManualPlantCtrl'
+          }
+        },
+        cache:false
       })
     ;
     // if none of the above states are matched, use this as the fallback
@@ -96,13 +109,13 @@ angular.module('presto', ['ionic', 'presto.controllers', 'presto.directives', 'p
     var tokenInjector = {
       request: function (config) {
         /*config.headers['x-presto-token'] = CommonsMethods.getToken();
-        config.headers['x-presto-ctype'] = CommonsMethods.getCtype();
-        config.headers['x-presto-cversion'] = CommonsMethods.getCversion();
-        config.headers['x-presto-channel'] = CommonsMethods.getChannel();
-        config.headers['x-presto-openid'] = CommonsMethods.getOpenid();
-        config.headers['x-presto-latitude'] = CommonsMethods.getLatitude();
-        config.headers['x-presto-longtitude'] = CommonsMethods.getLongtitude();
-        config.headers['x-presto-deviceinfo'] = CommonsMethods.getDeviceinfo();*/
+         config.headers['x-presto-ctype'] = CommonsMethods.getCtype();
+         config.headers['x-presto-cversion'] = CommonsMethods.getCversion();
+         config.headers['x-presto-channel'] = CommonsMethods.getChannel();
+         config.headers['x-presto-openid'] = CommonsMethods.getOpenid();
+         config.headers['x-presto-latitude'] = CommonsMethods.getLatitude();
+         config.headers['x-presto-longtitude'] = CommonsMethods.getLongtitude();
+         config.headers['x-presto-deviceinfo'] = CommonsMethods.getDeviceinfo();*/
         return config;
       }
       , response: function (response) {
@@ -146,37 +159,37 @@ angular.module('presto', ['ionic', 'presto.controllers', 'presto.directives', 'p
         Storage.set('LoginUser', loginUser);
       }
 
-      $rootScope.$on('$locationChangeStart', function (e, newState, oldState) {
+      /*$rootScope.$on('$locationChangeStart', function (e, newState, oldState) {
 
-        $ionicBackdrop.release();
+       $ionicBackdrop.release();
 
-        var noCheckLoginUrl = {     //不验证是否登录url
-          '/welcome': 1,
-          '/tabs/login': 1,
-          '/tabs/priceList': 1,
-          '/priceList': 1,
-          '/tabs/questions': 1,
-          '/tabs/about': 1,
-          '/tabs/agreement': 1,
-          '/tabs/depositAgreement': 1,
-          '/qrcode': 1,
-          '/tabs/home': 1,
-          '/tabs/store': 1,
-          '/tabs/storePriceList': 1
-        };
-        //console.log(noCheckLoginUrl[newState.substr(newState.indexOf('#')+1)]);
-        var url = newState.substr(newState.indexOf('#') + 1);
+       var noCheckLoginUrl = {     //不验证是否登录url
+       '/welcome': 1,
+       '/tabs/login': 1,
+       '/tabs/priceList': 1,
+       '/priceList': 1,
+       '/tabs/questions': 1,
+       '/tabs/about': 1,
+       '/tabs/agreement': 1,
+       '/tabs/depositAgreement': 1,
+       '/qrcode': 1,
+       '/tabs/home': 1,
+       '/tabs/store': 1,
+       '/tabs/storePriceList': 1
+       };
+       //console.log(noCheckLoginUrl[newState.substr(newState.indexOf('#')+1)]);
+       var url = newState.substr(newState.indexOf('#') + 1);
 
-        if (url && !noCheckLoginUrl[url] && !CommonMethods.isLogin()) {
-          e.preventDefault();
-          //CommonToasts.showAlert('提示', '请先登录!');
-          $state.go('login');
-          $rootScope.newState = newState;
-        }
+       if (url && !noCheckLoginUrl[url] && !CommonMethods.isLogin()) {
+       e.preventDefault();
+       //CommonToasts.showAlert('提示', '请先登录!');
+       $state.go('login');
+       $rootScope.newState = newState;
+       }
 
-        $rootScope.$broadcast('SideMenuClose');
+       $rootScope.$broadcast('SideMenuClose');
 
-      });
+       });*/
       CommonMethods.checkDevicePlat();
 
     }])

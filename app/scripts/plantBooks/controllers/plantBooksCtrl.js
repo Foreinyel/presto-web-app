@@ -5,11 +5,11 @@
 'use strict';
 
 presto.CONTROLLERS
-.controller('PlantBooksCtrl',['$scope','$state','Params',function($scope,$state,Params){
+.controller('PlantBooksCtrl',['$scope','$state','Params','PlantBookType',function($scope,$state,Params,PlantBookType){
 
   //选择植书方式
   $scope.goPlantMethods = function(plantType){
-    Params.setParam('CurrentPlantType',plantType);
+    Params.setParam('CurrentPlantType',PlantBookType[plantType]);
     $state.go('tabs.plantMethods');
   };
 

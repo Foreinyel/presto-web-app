@@ -37,7 +37,6 @@ presto.CONTROLLERS
             if (argus && argus.hideNavTab) {
                 $scope.isShowTabs = false;
             }
-            $scope.ifHideBoxShadow = $state.is('tabs.orders');
         });
 
     }]);

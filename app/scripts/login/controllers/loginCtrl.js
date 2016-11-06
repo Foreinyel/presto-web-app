@@ -85,6 +85,7 @@ presto.CONTROLLERS
                 LoginService.login(param, function (response) {
                     if (response && response.responseCode == '0') {
                       $state.go('tabs.home');
+                      Storage.set('LoginUser',response.data);
                     } else {
                         if (response && response.responseMsg) {
                             CommonToasts.showAlert('提示', response.responseMsg);
