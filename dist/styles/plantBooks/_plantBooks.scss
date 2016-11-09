@@ -1,0 +1,52 @@
+.plantBooks-content{
+
+  background: #F4F4F4;
+
+  .logo-panel{
+    height:12.15rem;
+    width:100%;
+    padding-top:2.8rem;
+
+    .logo-div{
+      width:3rem;
+      height:3rem;
+      //margin-top:2.8rem;
+      margin-left:auto;
+      margin-right:auto;
+      background-color: #ffffff;
+    }
+
+    .logo-text{
+      margin-top:1rem;
+      width:100%;
+      text-align: center;
+      font-family:PingFangSC-Regular;
+      font-size:0.7rem;
+      color: #4B4B4B;
+    }
+  }
+
+  .donate-books{
+    width:100%;
+    height:5rem;
+    background-color: #ffffff;
+    padding-top:1rem;
+    padding-left:2.4rem;
+    margin-bottom:0.5rem;
+    p{
+      margin:0;
+      font-family:PingFangSC-Medium;
+      color: #4B4B4B;
+    }
+    p:nth-child(1){
+      font-size:1.5rem;
+      height:2.1rem;
+      line-height:2.1rem;
+    }
+    p:nth-child(2){
+      font-size:0.7rem;
+      height:1rem;
+      line-height:1rem;
+    }
+  }
+}

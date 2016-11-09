@@ -1,0 +1,53 @@
+<ion-view view-title="手动植书" doc-title="手动植书" hide-nav-bar="true" hide-back-button="true">
+  <ion-content class="manualPlant-content" scroll="false">
+
+    <div ng-if="!showPlantSuccess">
+      <div class="book-img-panel">
+        <div class="img-div">
+          <span>单机添加封面</span>
+        </div>
+      </div>
+      <div class="book-info-panel">
+        <form name="form" novalidate>
+          <div class="info-input-item">
+            <p>书名</p>
+            <input placeholder="请输入书名" ng-model="bookInfo.bookName">
+          </div>
+          <div class="info-input-item">
+            <input placeholder="请输入作者" ng-model="bookInfo.bookAuthor">
+          </div>
+          <div class="info-input-item">
+            <input placeholder="请输入出版社" ng-model="bookInfo.bookPress">
+          </div>
+          <div class="info-input-item">
+            <input placeholder="请输入ISBN号" ng-model="bookInfo.bookIsbn">
+          </div>
+        </form>
+      </div>
+      <div class="footer-button">
+        <div class="button-left">
+          我的书单
+        </div>
+        <div class="button-right" ng-click="savePlantBookReq()">
+          完成植书
+        </div>
+      </div>
+    </div>
+    <div ng-if="showPlantSuccess" class="plant-success-content">
+      <div class="success-title">
+        <p>完成植书入园申请！</p>
+        <p>请耐心等待我们的园丁联系。</p>
+        <p>您选择的是捐赠，将获得等值的300书币。</p>
+        <p>有关书币奖励规则，具体请查前往ＸＸＸ。</p>
+      </div>
+      <div class="footer-button">
+        <div class="button-left">
+          我的书单
+        </div>
+        <div class="button-right" ng-click="continuePlantBook()">
+          继续植书
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

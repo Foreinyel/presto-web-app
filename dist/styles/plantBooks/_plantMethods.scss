@@ -1,0 +1,66 @@
+.plantMethods-content{
+  background-color: #4B4B4B;
+
+  .search-input-area{
+    width:100%;
+    margin-top:0.5rem;
+    padding-left:0.7rem;
+    padding-right:0.7rem;
+
+    input{
+      width:100%;
+      border: 1px solid;
+      outline: none;
+      text-align: center;
+      border-radius: 3px;
+      font-family: PingFangSC-Regular !important;
+      font-size: 0.65rem;
+      height: 1.4rem;
+      line-height: 1.4rem;
+      padding: 5px;
+    }
+  }
+
+
+  .plantMethods-area{
+
+    margin-top:1.8rem;
+
+    .plantMethods-qrcode,.plantMethods-manual{
+      text-align: center;
+      i{
+        display: block;
+        background-size: cover;
+        margin: 0 auto;
+      }
+
+      span{
+        margin-top: 0.7rem;
+        display: block;
+        font-size:0.925rem;
+        font-family:PingFangSC-Regular;
+        color: #ffffff;
+        line-height:0.925rem;
+      }
+    }
+
+    .plantMethods-qrcode i{
+      background-image: url("../../images/icons/plantBooks/sao@2x.png");
+      width:5.65rem;
+      height:4.15rem;
+    }
+
+    .plantMethods-manual i{
+      background-image: url("../../images/icons/plantBooks/zhi@2x.png");
+      width:3.85rem;
+      height:3.6rem;
+    }
+
+
+    .divider{
+      width: 14.4rem;
+      margin: 1.25rem auto;
+      border-top: 1px solid white;
+    }
+  }
+}
