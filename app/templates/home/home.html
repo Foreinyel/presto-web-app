@@ -4,11 +4,11 @@
 
       <input type="text" class="home-search-bar" ng-readonly="true"
              placeholder="搜索书名，作者或ISBN" style="padding-right: 10px;width:180px;">
-      <i class="icon ion-search placeholder-icon"></i>
+      <!--<i class="icon ion-search placeholder-icon"></i>-->
     </label>
 
     <div class="i-want-panel">
-      <div class="i-want-xiyue">
+      <div class="i-want-xiyue" ng-click="goSearchBook()">
         <p>我想惜阅</p>
       </div>
       <div class="i-want-zhishu" ng-click="goPlantBooks()">

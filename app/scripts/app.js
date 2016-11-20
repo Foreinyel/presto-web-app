@@ -96,6 +96,28 @@ angular.module('presto', ['ionic', 'presto.controllers', 'presto.directives', 'p
         },
         cache:false
       })
+
+    //搜索惜阅
+      .state('tabs.searchBook',{
+        url:'/searchBook',
+        views:{
+          'tab-home':{
+            templateUrl:'templates/books/searchBook.html',
+            controller:'SearchBookCtrl'
+          }
+        }
+      })
+
+      //书籍详情页
+      .state('tabs.bookDetail',{
+        url:"/bookDetail",
+        views:{
+          'tab-home':{
+            templateUrl:'templates/books/bookDetail.html',
+            controller:'BookDetailCtrl'
+          }
+        }
+      })
     ;
     // if none of the above states are matched, use this as the fallback
     /*var loginUser = COMMONAPI.getStorage('LoginUser');

@@ -9,4 +9,8 @@ presto.CONTROLLERS
     $scope.goPlantBooks = function () {
       $state.go('tabs.plantBooks');
     };
+
+    $scope.goSearchBook = function(){
+      $state.go('tabs.searchBook');
+    };
   }]);

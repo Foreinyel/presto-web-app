@@ -32,4 +32,15 @@ presto.BACKEND
       }
     });
   }])
+
+  .factory('Book',['$resource','ENV',function($resource, ENV){
+    return $resource('','',{
+      findBooks:{
+        method:"GET",
+        url:ENV.baseUrl + "/book/findBooks",
+        param:{},
+        isArray:false
+      }
+    })
+  }])
 ;

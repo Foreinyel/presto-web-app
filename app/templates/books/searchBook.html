@@ -1,0 +1,17 @@
+<ion-view view-title="搜索" doc-title="搜索" hide-back-button="true" hide-nav-bar="true">
+  <ion-content class="searchBook-content">
+    <label class="item item-input search-label" style="border-width:0;padding-left: 8px;">
+      <span>上海</span>
+      <input type="text" class="home-search-bar"
+             placeholder="搜索书名，作者或ISBN">
+      <!--<i class="icon ion-search placeholder-icon"></i>-->
+    </label>
+    <div class="book-list">
+      <div class="book-item" ng-repeat="book in bookList" ng-click="goBookDetail(book)">
+        <img ng-src="{{book.bookImgUrl}}" err-src="" class="book-img">
+        <p class="book-name">{{book.bookName}}</p>
+        <p class="book-author">{{book.authorName}}</p>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

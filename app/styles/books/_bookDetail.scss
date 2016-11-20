@@ -1,0 +1,118 @@
+.bookDetail-content {
+  background-color: #F4F4F4;
+
+  div[class=scroll]{
+    height: 100%;
+  }
+  .book-info-panel {
+    padding: 1rem 0.6rem 0.6rem;
+    background: #FFFFFF;
+    img {
+      width: 4rem;
+      height: 5.5rem;
+      //margin-left: 0.6rem;
+    }
+
+    .book-desc {
+      p {
+        font-family: PingFangSC-Regular;
+        font-size: 0.7rem;
+        color: #4B4B4B;
+        letter-spacing: 0px;
+        line-height: 1.1rem;
+        margin:0;
+      }
+    }
+
+    .book-info-text {
+      position: absolute;
+      left: 5.5rem;
+      top: 1rem;
+
+      p {
+        margin: 0;
+      }
+
+      .book-name {
+        font-family: PingFangSC-Medium !important;
+        font-size: 0.9rem;
+        color: #4B4B4B;
+        letter-spacing: 0px;
+        line-height: 0.9rem;
+        margin-bottom: 0.4rem;
+      }
+      .book-author {
+        opacity: 0.98;
+        font-family: PingFangSC-Light !important;
+        font-size: 0.6rem;
+        color: #4B4B4B;
+        letter-spacing: 0px;
+        line-height: 0.8rem;
+      }
+      .book-press {
+        opacity: 0.98;
+        font-family: PingFangSC-Light;
+        font-size: 0.5rem;
+        color: #4B4B4B;
+        letter-spacing: 0px;
+        line-height: 0.6rem;
+      }
+    }
+  }
+
+  .book-author-panel{
+    margin-top: 0.5rem;
+    background-color: #ffffff;
+    padding:0.6rem;
+    p:nth-child(1){
+      font-family: PingFangSC-Regular;
+      font-size: 0.8rem;
+      color: #4B4B4B;
+      letter-spacing: 0px;
+      line-height: 1.2rem;
+    }
+    p:nth-child(2){
+      opacity: 0.98;
+      font-family: PingFangSC-Regular;
+      font-size: 0.7rem;
+      color: #4B4B4B;
+      letter-spacing: 0px;
+      line-height: 1.1rem;
+    }
+  }
+
+}
+
+.footer-button{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height:2.5rem;
+  div{
+    display: inline-block;
+    float: left;
+    text-align: center;
+    height: 100%;
+    line-height: 2.5rem;
+  }
+  .favor{
+    width:20%;
+    font-family: PingFangSC-Regular;
+    font-size: 0.5rem;
+    color: #999999;
+    background: #ffffff;
+  }
+  .book-list{
+    background: #999999;
+  }
+  .order-now{
+    background: #4B4B4B;
+  }
+  .book-list,.order-now{
+    width:40%;
+    font-family: PingFangSC-Medium;
+    font-size: 0.8rem;
+    color: #FFFFFF;
+    letter-spacing: 0px;
+  }
+}
