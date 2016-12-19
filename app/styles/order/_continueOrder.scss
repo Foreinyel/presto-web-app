@@ -1,0 +1,49 @@
+.continueOrder-content {
+
+  .book-panel{
+    float: left;
+  }
+
+  .continueItems-panel {
+    background: #FFF;
+    float: left;
+
+    .selected{
+      //border: 1px solid #D56B54;
+      border-color: #D56B54 !important;
+      i{
+        display: block !important;
+      }
+
+    }
+
+    .item {
+      background: #FFF;
+      width: 45%;
+      margin: 0.5rem 2.5%;
+      display: inline-block;
+      float: left;
+      font-family: PingFangSC-Regular;
+      font-size: 0.7rem;
+      color: #4B4B4B;
+      letter-spacing: -0.25px;
+      border-radius: 4px;
+      border: 1px solid #999999;
+
+      i{
+        background-image: url(../../images/icons/order/check_circle_green@2x.png);
+        -webkit-background-size:contain;
+        background-size:contain;
+        position: absolute;
+        width:0.9rem;
+        height:0.9rem;
+        top:50%;
+        margin-top:-0.45rem;
+        right:0.5rem;
+        display: none;
+      }
+
+    }
+  }
+
+}

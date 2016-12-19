@@ -1,0 +1,48 @@
+<ion-view view-title="书条" doc-title="" hide-nav-bar="true" hide-back-button="true">
+  <ion-content class="myOrders-content">
+    <div class="status-bar">
+      <div class="status-all" ng-class="{'active':!status}" ng-click="selectStatus('')">
+        全部
+      </div>
+      <div class="status-list">
+        <div class="status-item" ng-class="{'active':status==10}" ng-click="selectStatus('10')">待付款</div>
+        <div class="status-item" ng-class="{'active':status==20}" ng-click="selectStatus('20')">待发货</div>
+        <div class="status-item" ng-class="{'active':status==30}" ng-click="selectStatus('30')">配送中</div>
+        <div class="status-item" ng-class="{'active':status==40}" ng-click="selectStatus('40')">惜阅中</div>
+        <div class="status-item" ng-class="{'active':status==50}" ng-click="selectStatus('50')">待归还</div>
+        <div class="status-item" ng-class="{'active':status==800}" ng-click="selectStatus('800')">退款/售后</div>
+      </div>
+    </div>
+
+    <div class="order-item" ng-repeat="o in orders" ng-click="goOrderDetail(o)">
+      <div class="book-info-panel">
+        <div class="book-item" ng-repeat="book in o.orderDetails">
+          <img>
+
+          <div class="book-info">
+            <p class="book-name">{{book.bookName}}</p>
+
+            <p class="book-author">作者：{{book.bookAuthor}}</p>
+
+            <p class="book-press">{{book.bookPress}}</p>
+
+            <p class="book-price">{{book.price * 7}}书币/周 <!--50元额度--></p>
+          </div>
+        </div>
+      </div>
+      <div class="button-panel">
+        <button class="contact-us">联系客服</button>
+        <button class="cancel-order" ng-if="o.status == 10">取消订单</button>
+        <button class="pay-now" ng-click="goReturnBook(o,$event)" ng-if="o.status == 50">填写单号</button>
+        <button class="pay-now" ng-if="o.status == 10" ng-click="orderPay(o,$event)">立即付款</button>
+        <button class="pay-now" ng-if="o.status == 40" ng-click="goContinueOrder(o,$event)">续惜阅</button>
+      </div>
+      <div class="time-panel">
+        惜书时间：{{o.dateFromText}} -{{o.dateEndText}} ({{o.weeks}}周)
+      </div>
+      <div class="total-amount">
+        共{{o.amount}}书币
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

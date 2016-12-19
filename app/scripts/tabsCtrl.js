@@ -15,8 +15,8 @@ presto.CONTROLLERS
             $state.go('tabs.home');
         };
 
-        $scope.goMarketingsTab = function () {
-            $state.go('tabs.marketings');
+        $scope.goMyOrders = function () {
+            $state.go('tabs.orders');
         };
 
         $scope.goCardsTab = function () {

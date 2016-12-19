@@ -1,0 +1,150 @@
+.myOrders-content {
+
+  background: #f4f4f4;
+  .status-bar {
+
+    height: 4rem;
+    background: #ffffff;
+    margin-bottom: 0.5rem;
+
+    .active {
+      color: #D56B54 !important;
+    }
+
+    .status-all {
+      width: 20%;
+      display: inline-block;
+      height: 4rem;
+      float: left;
+      padding-bottom: 2rem;
+      line-height: 2rem;
+      text-align: center;
+      font-size: 0.6rem;
+    }
+
+    .status-list {
+
+      width: 80%;
+      display: inline-block;
+      height: 4rem;
+      .status-item {
+
+        display: inline-block;
+        width: 25%;
+        float: left;
+        height: 2rem;
+        line-height: 2rem;
+        text-align: center;
+        font-size: 0.6rem;
+      }
+    }
+  }
+
+  .order-item {
+    background: #fff;
+    padding: 0.6rem 0.8rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+
+    .book-info-panel {
+      margin-bottom: 0.7rem;
+      min-height: 4rem;
+      .book-item {
+
+        img {
+          position: absolute;
+          background: #F4F4F4;
+          width: 2.75rem;
+          height: 4rem;
+        }
+        .book-info {
+          height: inherit;
+          margin-left: 3.2rem;
+          .book-name {
+            font-family: PingFangSC-Medium !important;
+            font-size: 0.7rem;
+            color: #4B4B4B;
+            letter-spacing: 0;
+            line-height: 0.9rem;
+            margin: 0;
+          }
+          .book-author {
+            opacity: 0.98;
+            font-family: PingFangSC-Light !important;
+            font-size: 0.6rem;
+            color: #4B4B4B;
+            letter-spacing: 0;
+            line-height: 0.8rem;
+            margin: 0;
+          }
+          .book-press {
+            opacity: 0.98;
+            font-family: PingFangSC-Light !important;
+            font-size: 0.5rem;
+            color: #4B4B4B;
+            letter-spacing: 0;
+            line-height: 0.6rem;
+            margin: 0;
+
+          }
+          .book-price {
+            font-family: PingFangSC-Regular;
+            font-size: 0.6rem;
+            color: #4B4B4B;
+            letter-spacing: 0;
+            margin: 0;
+          }
+        }
+      }
+    }
+
+    .button-panel {
+      margin-bottom: 0.7rem;
+      text-align: center;
+      button {
+        width: 4.5rem;
+        height: 1.5rem;
+        font-size: 0.7rem;
+        font-family: PingFangSC-Regular;
+        border-radius: 2px;
+        letter-spacing: 0;
+        line-height: 0.7rem;
+        margin-right: 0.325rem;
+        margin-left: 0.325rem;
+        padding: 0;
+      }
+      .contact-us, .cancel-order {
+        background: #FFFFFF;
+        border: 1px solid #999999;
+        color: #4B4B4B;
+      }
+
+      .pay-now {
+        background: #D56B54;
+        border-radius: 2px;
+        border: none !important;
+        font-family: PingFangSC-Regular;
+        color: #FFFFFF;
+      }
+    }
+
+    .time-panel {
+      font-family: PingFangSC-Light !important;
+      font-size: 0.6rem;
+      color: #4B4B4B;
+      letter-spacing: 0;
+      line-height: 0.8rem;
+      text-align: center;
+    }
+
+    .total-amount {
+      position: absolute;
+      top: 0.6rem;
+      right: 0.8rem;
+      font-family: PingFangSC-Regular;
+      font-size: 0.7rem;
+      color: #D56B54;
+      letter-spacing: 0;
+    }
+  }
+}

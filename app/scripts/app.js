@@ -94,27 +94,93 @@ angular.module('presto', ['ionic', 'presto.controllers', 'presto.directives', 'p
             controller: 'ManualPlantCtrl'
           }
         },
-        cache:false
+        cache: false
       })
 
-    //搜索惜阅
-      .state('tabs.searchBook',{
-        url:'/searchBook',
-        views:{
-          'tab-home':{
-            templateUrl:'templates/books/searchBook.html',
-            controller:'SearchBookCtrl'
+      //搜索惜阅
+      .state('tabs.searchBook', {
+        url: '/searchBook',
+        views: {
+          'tab-home': {
+            templateUrl: 'templates/books/searchBook.html',
+            controller: 'SearchBookCtrl'
           }
         }
       })
 
       //书籍详情页
-      .state('tabs.bookDetail',{
-        url:"/bookDetail",
-        views:{
-          'tab-home':{
-            templateUrl:'templates/books/bookDetail.html',
-            controller:'BookDetailCtrl'
+      .state('tabs.bookDetail', {
+        url: "/bookDetail",
+        views: {
+          'tab-home': {
+            templateUrl: 'templates/books/bookDetail.html',
+            controller: 'BookDetailCtrl'
+          }
+        }
+      })
+
+      //书包
+      .state('tabs.bookPackage', {
+        url: '/bookPackage',
+        views: {
+          'tab-home': {
+            templateUrl: 'templates/books/bookPackage.html',
+            controller: 'BookPackageCtrl'
+          }
+        }
+      })
+
+      //下单
+      .state('tabs.order', {
+        url: '/order',
+        views: {
+          'tab-home': {
+            templateUrl: 'templates/order/order.html',
+            controller: 'OrderCtrl'
+          }
+        }
+      })
+
+      //订单列表
+      .state('tabs.orders', {
+        url: '/orders',
+        views: {
+          'tab-orders': {
+            templateUrl: 'templates/order/myOrders.html',
+            controller: 'MyOrdersCtrl'
+          }
+        }
+      })
+
+      //订单详情
+      .state('tabs.orderDetail', {
+        url: '/orderDetail',
+        views: {
+          'tab-orders': {
+            templateUrl: 'templates/order/orderDetail.html',
+            controller: 'OrderDetailCtrl'
+          }
+        }
+      })
+
+      //续惜阅
+      .state('tabs.continueOrder', {
+        url: '/continueOrder',
+        views: {
+          'tab-orders': {
+            templateUrl: 'templates/order/continueOrder.html',
+            controller: 'ContinueOrderCtrl'
+          }
+        }
+      })
+
+      //我要还书
+      .state('tabs.returnBook', {
+        url: '/returnBook',
+        views: {
+          'tab-orders': {
+            templateUrl: 'templates/order/returnBook.html',
+            controller: 'ReturnBookCtrl'
           }
         }
       })
@@ -170,48 +236,48 @@ angular.module('presto', ['ionic', 'presto.controllers', 'presto.directives', 'p
     , function ($rootScope, $state, CommonMethods, CommonToasts, $http, $ionicBackdrop, Storage, WxApi) {
 
       //app打开时,获取token,并保存为登录状态
-      var args = CommonMethods.getArgs();
-      if (args && args.token) {
-        var loginUser = {
-          token: args.token,
-          phoneNumber: args.mobile,
-          wxNickName: '',
-          headImgUrl: ''
-        };
-        Storage.set('LoginUser', loginUser);
-      }
-
-      /*$rootScope.$on('$locationChangeStart', function (e, newState, oldState) {
-
-       $ionicBackdrop.release();
-
-       var noCheckLoginUrl = {     //不验证是否登录url
-       '/welcome': 1,
-       '/tabs/login': 1,
-       '/tabs/priceList': 1,
-       '/priceList': 1,
-       '/tabs/questions': 1,
-       '/tabs/about': 1,
-       '/tabs/agreement': 1,
-       '/tabs/depositAgreement': 1,
-       '/qrcode': 1,
-       '/tabs/home': 1,
-       '/tabs/store': 1,
-       '/tabs/storePriceList': 1
+      /*var args = CommonMethods.getArgs();
+       if (args && args.token) {
+       var loginUser = {
+       token: args.token,
+       phoneNumber: args.mobile,
+       wxNickName: '',
+       headImgUrl: ''
        };
-       //console.log(noCheckLoginUrl[newState.substr(newState.indexOf('#')+1)]);
-       var url = newState.substr(newState.indexOf('#') + 1);
+       Storage.set('LoginUser', loginUser);
+       }*/
 
-       if (url && !noCheckLoginUrl[url] && !CommonMethods.isLogin()) {
-       e.preventDefault();
-       //CommonToasts.showAlert('提示', '请先登录!');
-       $state.go('login');
-       $rootScope.newState = newState;
-       }
+      $rootScope.$on('$locationChangeStart', function (e, newState, oldState) {
 
-       $rootScope.$broadcast('SideMenuClose');
+        $ionicBackdrop.release();
 
-       });*/
+        /*var noCheckLoginUrl = {     //不验证是否登录url
+         '/welcome': 1,
+         '/tabs/login': 1,
+         '/tabs/priceList': 1,
+         '/priceList': 1,
+         '/tabs/questions': 1,
+         '/tabs/about': 1,
+         '/tabs/agreement': 1,
+         '/tabs/depositAgreement': 1,
+         '/qrcode': 1,
+         '/tabs/home': 1,
+         '/tabs/store': 1,
+         '/tabs/storePriceList': 1
+         };
+         //console.log(noCheckLoginUrl[newState.substr(newState.indexOf('#')+1)]);
+         var url = newState.substr(newState.indexOf('#') + 1);
+
+         if (url && !noCheckLoginUrl[url] && !CommonMethods.isLogin()) {
+         e.preventDefault();
+         //CommonToasts.showAlert('提示', '请先登录!');
+         $state.go('login');
+         $rootScope.newState = newState;
+         }
+
+         $rootScope.$broadcast('SideMenuClose');
+         */
+      });
       CommonMethods.checkDevicePlat();
 
     }])

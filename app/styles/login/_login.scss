@@ -71,21 +71,22 @@
       color:$g-common-btn-border-line;
     }
   }
-  .login-begin2use-div{
-    position: absolute;
-    bottom: 0;
+}
+
+.login-begin2use-div{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 3rem;
+  button{
     width: 100%;
-    height: 3rem;
-    button{
-      width: 100%;
-      height: 100%;
-      outline:none;
-      border:none;
-      background-color:$g-bg-color;
-      color:$g-common-btn-color;
-      font-family:PingFangSC-Medium !important;
-      z-index:10;
-      padding: 0;
-    }
+    height: 100%;
+    outline:none;
+    border:none;
+    background-color:$g-bg-color;
+    color:$g-common-btn-color;
+    font-family:PingFangSC-Medium !important;
+    z-index:10;
+    padding: 0;
   }
 }

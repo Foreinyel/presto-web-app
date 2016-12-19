@@ -1,96 +1,104 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    <title></title>
+<head>
+  <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no"/>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <title></title>
 
-    <!-- build:css styles/vendor.css -->
-    <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/ionic/release/css/ionic.css" />
-    <!-- endbower -->
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/ionic/release/css/ionic.css" />
+  <!-- endbower -->
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
 
-    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
-    <link href="styles/ionic.app.css" rel="stylesheet">
-    -->
+  <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+  <link href="styles/ionic.app.css" rel="stylesheet">
+  -->
 
-  </head>
+</head>
 
-  <body ng-app="presto">
-    <ion-nav-view></ion-nav-view>
+<body ng-app="presto">
+<ion-nav-view></ion-nav-view>
 
-    <script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
 
-    <!-- ionic/angularjs js -->
-    <!-- build:js scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/angular-animate/angular-animate.js"></script>
-    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-    <script src="bower_components/ionic/release/js/ionic.js"></script>
-    <script src="bower_components/ionic/release/js/ionic-angular.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
+<!-- ionic/angularjs js -->
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/ionic/release/js/ionic.js"></script>
+<script src="bower_components/ionic/release/js/ionic-angular.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
 
-    <!-- cordova script (this will be a 404 during development) -->
-    <!--<script src="cordova.js"></script>-->
-    <!--<script src="QRCode.js"></script>-->
-    <script src="qrgen.min.js"></script>
+<!-- cordova script (this will be a 404 during development) -->
+<!--<script src="cordova.js"></script>-->
+<!--<script src="QRCode.js"></script>-->
+<script src="qrgen.min.js"></script>
 
-    <!-- your app's js -->
-    <!-- build:js scripts/scripts.js -->
-    <script src="scripts/app.js"></script>
-    <script src="scripts/config.js"></script>
-    <script src="bower_components/angular-resource/angular-resource.js"></script>
-    <script src="scripts/common/others/imageResizer.js" ></script>
+<!-- your app's js -->
+<!-- build:js scripts/scripts.js -->
+<script src="scripts/app.js"></script>
+<script src="scripts/config.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="scripts/common/others/imageResizer.js"></script>
 
-    <!--others-->
-    <script src="scripts/common/others/mapApi.js" ></script>
-    <script src="scripts/common/others/wxApi.js" ></script>
-    <script src="scripts/common/others/commonApi.js"></script>
-    <script src="scripts/common/others/array.js" ></script>
-    <script src="scripts/common/others/toastmessage.js" ></script>
-    <script src="scripts/common/others/extendApi.js" ></script>
-    <script src="scripts/common/others/nativeApi.js" ></script>
+<!--others-->
+<script src="scripts/common/others/mapApi.js"></script>
+<script src="scripts/common/others/wxApi.js"></script>
+<script src="scripts/common/others/commonApi.js"></script>
+<script src="scripts/common/others/array.js"></script>
+<script src="scripts/common/others/toastmessage.js"></script>
+<script src="scripts/common/others/extendApi.js"></script>
+<script src="scripts/common/others/nativeApi.js"></script>
+<script src="scripts/common/others/String.js"></script>
 
-    <!--controllers-->
-    <!--<script src="scripts/controllers.js"></script>-->
-    <script src="scripts/configuration.js"></script>
-    <script src="scripts/tabsCtrl.js"></script>
-    <script src="scripts/login/controllers/loginCtrl.js"></script>
-    <script src="scripts/home/controllers/homeCtrl.js"></script>
-    <script src="scripts/plantBooks/controllers/plantBooksCtrl.js"></script>
-    <script src="scripts/plantBooks/controllers/plantMethodsCtrl.js"></script>
-    <script src="scripts/plantBooks/controllers/manualPlantCtrl.js"></script>
-    <script src="scripts/books/controllers/searchBookCtrl.js"></script>
-    <script src="scripts/books/controllers/bookDetailCtrl.js"></script>
+<!--controllers-->
+<!--<script src="scripts/controllers.js"></script>-->
+<script src="scripts/configuration.js"></script>
+<script src="scripts/tabsCtrl.js"></script>
+<script src="scripts/login/controllers/loginCtrl.js"></script>
+<script src="scripts/home/controllers/homeCtrl.js"></script>
+<script src="scripts/plantBooks/controllers/plantBooksCtrl.js"></script>
+<script src="scripts/plantBooks/controllers/plantMethodsCtrl.js"></script>
+<script src="scripts/plantBooks/controllers/manualPlantCtrl.js"></script>
+<script src="scripts/books/controllers/searchBookCtrl.js"></script>
+<script src="scripts/books/controllers/bookDetailCtrl.js"></script>
+<script src="scripts/books/controllers/bookPackageCtrl.js"></script>
+<script src="scripts/order/controllers/orderCtrl.js"></script>
+<script src="scripts/order/controllers/myOrdersCtrl.js"></script>
+<script src="scripts/order/controllers/orderDetailCtrl.js"></script>
+<script src="scripts/order/controllers/continueOrderCtrl.js"></script>
+<script src="scripts/order/controllers/returnBookCtrl.js"></script>
 
-    <!--directives-->
-    <script src="scripts/common/directives/errSrcDirec.js"></script>
-    <script src="scripts/common/directives/docTitleDirec.js"></script>
+<!--directives-->
+<script src="scripts/common/directives/errSrcDirec.js"></script>
+<script src="scripts/common/directives/docTitleDirec.js"></script>
 
-    <!--services-->
-    <script src="scripts/common/services/storage.js"></script>
-    <script src="scripts/common/services/backend.js"></script>
-    <script src="scripts/common/services/CommonMethods.js"></script>
-    <script src="scripts/common/services/commonToasts.js"></script>
-    <script src="scripts/login/services/loginService.js"></script>
-    <script src="scripts/common/pays/wxPayApi.js"></script>
-    <script src="scripts/common/services/paramService.js"></script>
-    <script src="scripts/plantBooks/services/plantBookService.js"></script>
-    <script src="scripts/books/services/bookServices.js"></script>
+<!--services-->
+<script src="scripts/common/services/storage.js"></script>
+<script src="scripts/common/services/backend.js"></script>
+<script src="scripts/common/services/CommonMethods.js"></script>
+<script src="scripts/common/services/commonToasts.js"></script>
+<script src="scripts/login/services/loginService.js"></script>
+<script src="scripts/common/pays/wxPayApi.js"></script>
+<script src="scripts/common/services/paramService.js"></script>
+<script src="scripts/plantBooks/services/plantBookService.js"></script>
+<script src="scripts/books/services/bookServices.js"></script>
+<script src="scripts/order/services/orderService.js"></script>
 
-    <!--filters-->
-    <script src="scripts/common/filters/filters.js"></script>
+<!--filters-->
+<script src="scripts/common/filters/filters.js"></script>
 
-    <!--<script type="text/javascript" src="scripts/common/others/QRCode.js"></script>-->
-    <!-- endbuild -->
-  </body>
+<!--<script type="text/javascript" src="scripts/common/others/QRCode.js"></script>-->
+<!-- endbuild -->
+</body>
 </html>

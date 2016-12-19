@@ -1,0 +1,52 @@
+<ion-view view-title="还书" doc-title="" hide-back-button="true" hide-nav-bar="true">
+  <ion-content class="orderDetail-content returnBook-content">
+    <div class="book-panel">
+      <div class="user-book-item" ng-repeat="ub in userBooks">
+        <div class="user-book-title">
+          <p>{{ub.userName || '匿名用户'}}</p>
+        </div>
+        <div class="book-item" ng-class="{'border-bottom-gray':$index<ub.bookItem.length-1}"
+             ng-repeat="b in ub.bookItem">
+          <div class="book-img">
+            <img>
+          </div>
+          <div class="book-info">
+            <p class="book-name">{{b.bookName}}</p>
+
+            <p class="book-author">{{b.bookAuthor}}</p>
+
+            <p class="book-press">{{b.bookPress}}</p>
+
+            <p class="book-price">{{b.price*7}}书币/每周</p>
+          </div>
+        </div>
+      </div>
+      <div class="address-info">
+        <div class="input-item border-bottom-gray">
+          <label>姓名</label>
+          <input ng-disabled="true">
+        </div>
+        <div class="input-item border-bottom-gray">
+          <label>还书地址</label>
+          <input ng-disabled="true">
+        </div>
+        <div class="input-item border-bottom-gray">
+          <label>快递公司</label>
+          <input ng-model="returnBook.deliveryCom">
+        </div>
+        <div class="input-item ">
+          <label>快递单号</label>
+          <input ng-model="returnBook.deliveryOrderNo">
+        </div>
+      </div>
+    </div>
+  </ion-content>
+  <div class="footer-button returnBook-footer-button">
+    <div class="button-left" ng-click="goOrders()">
+      书条
+    </div>
+    <div class="button-right" ng-click="returnBook()">
+      确认
+    </div>
+  </div>
+</ion-view>

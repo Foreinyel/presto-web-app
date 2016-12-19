@@ -13,6 +13,12 @@
 @import "plantBooks/manualPlant";
 @import "books/searchBook";
 @import "books/bookDetail";
+@import "books/bookPackage";
+@import "order/order";
+@import "order/myOrders";
+@import "order/orderDetail";
+@import "order/returnBook";
+@import "order/continueOrder";
 
 //bar-header-nav ios bg-c
 [nav-bar-transition="ios"] {
@@ -719,6 +725,10 @@ label, input, button, select, textarea {
 
 .ocra-font {
   font-family: OcraExtended !important;
+}
+
+.border-bottom-gray{
+  border-bottom:1px solid #e4e4e4;
 }
 
 .border-bottom-radius {

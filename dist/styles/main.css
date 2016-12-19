@@ -12353,15 +12353,16 @@ a.button .icon:before, a.button.icon:before, a.button.icon-left:before, a.button
 .login-content .login-laws-div a {
   color: #8f939c;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/login\/_login\.scss}line{font-family:\0000374}}
-.login-content .login-begin2use-div {
-  position: absolute;
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/login\/_login\.scss}line{font-family:\0000376}}
+.login-begin2use-div {
+  position: fixed;
   bottom: 0;
   width: 100%;
   height: 3rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/login\/_login\.scss}line{font-family:\0000379}}
-.login-content .login-begin2use-div button {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/login\/_login\.scss}line{font-family:\0000381}}
+.login-begin2use-div button {
   width: 100%;
   height: 100%;
   outline: none;
@@ -13169,13 +13170,33 @@ html {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/books\/_bookDetail\.scss}line{font-family:\0000386}}
+.book-package-float-div {
+  position: fixed;
+  left: 1.2rem;
+  bottom: 4rem;
+  width: 2rem;
+  height: 2rem;
+  background: #4B4B4B;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/books\/_bookDetail\.scss}line{font-family:\0000396}}
+.book-package-float-div i {
+  background-image: url("../../images/icons/bookDetail/shubao@2x.png");
+  background-size: contain;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/books\/_bookDetail\.scss}line{font-family:\00003106}}
 .footer-button {
   position: fixed;
   bottom: 0;
   width: 100%;
   height: 2.5rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/books\/_bookDetail\.scss}line{font-family:\0000391}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/books\/_bookDetail\.scss}line{font-family:\00003111}}
 .footer-button div {
   display: inline-block;
   float: left;
@@ -13183,7 +13204,7 @@ html {
   height: 100%;
   line-height: 2.5rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/books\/_bookDetail\.scss}line{font-family:\0000398}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/books\/_bookDetail\.scss}line{font-family:\00003118}}
 .footer-button .favor {
   width: 20%;
   font-family: PingFangSC-Regular;
@@ -13191,15 +13212,15 @@ html {
   color: #999999;
   background: #ffffff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/books\/_bookDetail\.scss}line{font-family:\00003105}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/books\/_bookDetail\.scss}line{font-family:\00003125}}
 .footer-button .book-list {
   background: #999999;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/books\/_bookDetail\.scss}line{font-family:\00003108}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/books\/_bookDetail\.scss}line{font-family:\00003128}}
 .footer-button .order-now {
   background: #4B4B4B;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/books\/_bookDetail\.scss}line{font-family:\00003111}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/books\/_bookDetail\.scss}line{font-family:\00003131}}
 .footer-button .book-list, .footer-button .order-now {
   width: 40%;
   font-family: PingFangSC-Medium;
@@ -13208,24 +13229,1017 @@ html {
   letter-spacing: 0px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\0000320}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/books\/_bookDetail\.scss}line{font-family:\00003146}}
+.show-user-book-modal .show-user-book-content .book-content {
+  position: absolute;
+  height: 22rem;
+  width: 100%;
+  bottom: 0;
+  background: #FFFFFF;
+  padding: 0.6rem 0.6rem 3.2rem;
+  overflow-x: scroll;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/books\/_bookDetail\.scss}line{font-family:\00003154}}
+.show-user-book-modal .show-user-book-content .book-content > p {
+  font-family: PingFangSC-Regular;
+  font-size: 0.8rem;
+  color: #4B4B4B;
+  letter-spacing: 0px;
+  line-height: 1.2rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/books\/_bookDetail\.scss}line{font-family:\00003162}}
+.show-user-book-modal .show-user-book-content .book-content .active {
+  border: 1px solid #D56B54;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/books\/_bookDetail\.scss}line{font-family:\00003166}}
+.show-user-book-modal .show-user-book-content .book-content .book-item {
+  padding: 0.5rem;
+  background: #F4F4F4;
+  width: 100%;
+  float: left;
+  margin-bottom: 0.5rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/books\/_bookDetail\.scss}line{font-family:\00003173}}
+.show-user-book-modal .show-user-book-content .book-content .book-item .title {
+  font-family: PingFangSC-Regular;
+  font-size: 0.7rem;
+  color: #999999;
+  letter-spacing: 0px;
+  line-height: 0.9rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/books\/_bookDetail\.scss}line{font-family:\00003181}}
+.show-user-book-modal .show-user-book-content .book-content .book-item .book-item-ul {
+  width: 100%;
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/books\/_bookDetail\.scss}line{font-family:\00003185}}
+.show-user-book-modal .show-user-book-content .book-content .book-item .book-item-ul li {
+  box-shadow: inset 0px 0px 0px 0px #E4E4E4;
+  border-bottom: 1px solid #E4E4E4;
+  padding: 0.4rem 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/books\/_bookDetail\.scss}line{font-family:\00003190}}
+.show-user-book-modal .show-user-book-content .book-content .book-item .book-item-ul li span {
+  font-family: PingFangSC-Regular;
+  font-size: 0.6rem;
+  color: #999999;
+  letter-spacing: 0px;
+  line-height: 0.8rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/books\/_bookDetail\.scss}line{font-family:\00003197}}
+.show-user-book-modal .show-user-book-content .book-content .book-item .book-item-ul li span:nth-child(2) {
+  float: right;
+  max-width: 60%;
+  color: #4B4B4B;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/books\/_bookDetail\.scss}line{font-family:\00003210}}
+.show-user-book-modal .footer-button {
+  position: fixed;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/books\/_bookDetail\.scss}line{font-family:\00003213}}
+.show-user-book-modal .footer-button button {
+  background: #4B4B4B;
+  outline: none;
+  border: none;
+  width: 100%;
+  height: 100%;
+  color: #FFFFFF;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/books\/_bookPackage\.scss}line{font-family:\000031}}
+.bookPackage-content {
+  padding: 0.6rem;
+  padding-bottom: 2.5rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/books\/_bookPackage\.scss}line{font-family:\000035}}
+.bookPackage-content .when-no-books {
+  font-family: PingFangSC-Medium !important;
+  font-size: 1.5rem;
+  color: #4B4B4B;
+  letter-spacing: 0px;
+  text-align: center;
+  line-height: 1;
+  margin-top: 4rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/books\/_bookPackage\.scss}line{font-family:\0000316}}
+.bookPackage-content .user-book-item .user-book-title {
+  height: 1.2rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/books\/_bookPackage\.scss}line{font-family:\0000318}}
+.bookPackage-content .user-book-item .user-book-title p {
+  margin: 0;
+  height: 100%;
+  line-height: 1.2rem;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #4B4B4B;
+  letter-spacing: 0px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/books\/_bookPackage\.scss}line{font-family:\0000330}}
+.bookPackage-content .user-book-item .book-item {
+  position: relative;
+  border-bottom: 1px solid #e4e4e4;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/books\/_bookPackage\.scss}line{font-family:\0000335}}
+.bookPackage-content .user-book-item .book-item .book-img {
+  width: 2.75rem;
+  height: 4rem;
+  display: inline-block;
+  background: #F4F4F4;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/books\/_bookPackage\.scss}line{font-family:\0000342}}
+.bookPackage-content .user-book-item .book-item .book-info {
+  position: absolute;
+  top: 0.5rem;
+  left: 3.25rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/books\/_bookPackage\.scss}line{font-family:\0000347}}
+.bookPackage-content .user-book-item .book-item .book-info p {
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/books\/_bookPackage\.scss}line{font-family:\0000351}}
+.bookPackage-content .user-book-item .book-item .book-info .book-name {
+  font-family: PingFangSC-Medium !important;
+  font-size: 0.7rem;
+  color: #4B4B4B;
+  letter-spacing: 0px;
+  line-height: 0.9rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/books\/_bookPackage\.scss}line{font-family:\0000359}}
+.bookPackage-content .user-book-item .book-item .book-info .book-author {
+  opacity: 0.98;
+  font-family: PingFangSC-Light !important;
+  font-size: 0.6rem;
+  color: #4B4B4B;
+  letter-spacing: 0px;
+  line-height: 0.9rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/books\/_bookPackage\.scss}line{font-family:\0000368}}
+.bookPackage-content .user-book-item .book-item .book-info .book-press {
+  opacity: 0.98;
+  font-family: PingFangSC-Light !important;
+  font-size: 0.5rem;
+  color: #4B4B4B;
+  letter-spacing: 0px;
+  line-height: 0.6rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/books\/_bookPackage\.scss}line{font-family:\0000377}}
+.bookPackage-content .user-book-item .book-item .book-info .book-price {
+  font-family: PingFangSC-Regular;
+  font-size: 0.6rem;
+  color: #4B4B4B;
+  letter-spacing: 0px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/books\/_bookPackage\.scss}line{font-family:\0000385}}
+.bookPackage-content .user-book-item .book-item .select-icon {
+  position: absolute;
+  right: 0;
+  display: block;
+  width: 0.7rem;
+  height: 0.7rem;
+  top: 50%;
+  margin-top: -0.35rem;
+  font-size: 0.7rem;
+  line-height: 0.7rem;
+  background: #e4e4e4;
+  border-radius: 50%;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/books\/_bookPackage\.scss}line{font-family:\00003101}}
+.bookPackage-content .user-book-item .book-pick-info {
+  margin-left: 3.5rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/books\/_bookPackage\.scss}line{font-family:\00003103}}
+.bookPackage-content .user-book-item .book-pick-info p {
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/books\/_bookPackage\.scss}line{font-family:\00003106}}
+.bookPackage-content .user-book-item .book-pick-info .book-pick-method {
+  border-bottom: 1px solid #e4e4e4;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/books\/_bookPackage\.scss}line{font-family:\00003110}}
+.bookPackage-content .user-book-item .book-pick-info .book-pick-addr span {
+  width: 80%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/books\/_bookPackage\.scss}line{font-family:\00003114}}
+.bookPackage-content .user-book-item .book-pick-info .book-pick-method, .bookPackage-content .user-book-item .book-pick-info .book-pick-addr {
+  margin: 0;
+  font-family: PingFangSC-Regular;
+  font-size: 0.6rem;
+  color: #999999;
+  letter-spacing: 0px;
+  min-height: 1.6rem;
+  line-height: 1.6rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/books\/_bookPackage\.scss}line{font-family:\00003123}}
+.bookPackage-content .user-book-item .book-pick-info .book-pick-method span, .bookPackage-content .user-book-item .book-pick-info .book-pick-addr span {
+  float: right;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/books\/_bookPackage\.scss}line{font-family:\00003131}}
+.footer-button {
+  position: absolute;
+  bottom: 0;
+  height: 2.5rem;
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/books\/_bookPackage\.scss}line{font-family:\00003136}}
+.footer-button div {
+  display: inline-block;
+  float: left;
+  text-align: center;
+  line-height: 2.5rem;
+  font-family: PingFangSC-Medium;
+  font-size: 0.8rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/books\/_bookPackage\.scss}line{font-family:\00003144}}
+.footer-button .button-left {
+  width: 25%;
+  background: #FFFFFF;
+  color: #999999;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/books\/_bookPackage\.scss}line{font-family:\00003150}}
+.footer-button .button-right {
+  width: 75%;
+  background: #4B4B4B;
+  color: #FFFFFF;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_order\.scss}line{font-family:\000031}}
+.order-content {
+  padding-bottom: 4rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_order\.scss}line{font-family:\000035}}
+.order-content .address-info, .order-content .order-info {
+  background-color: #ffffff;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_order\.scss}line{font-family:\0000310}}
+.order-content .address-info .input-item, .order-content .order-info .input-item {
+  padding: 0.2rem 0;
+  min-height: 1.8rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_order\.scss}line{font-family:\0000313}}
+.order-content .address-info .input-item label, .order-content .order-info .input-item label {
+  width: 25%;
+  display: inline-block;
+  font-family: PingFangSC-Regular;
+  font-size: 0.7rem;
+  color: #999999;
+  letter-spacing: 0;
+  line-height: 1.4rem;
+  height: 1.4rem;
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_order\.scss}line{font-family:\0000325}}
+.order-content .address-info .input-item input, .order-content .address-info .input-item textarea, .order-content .order-info .input-item input, .order-content .order-info .input-item textarea {
+  width: 75%;
+  display: inline-block;
+  outline: none;
+  border: none;
+  min-height: 1.4rem;
+  padding: 0;
+  margin: 0;
+  font-family: PingFangSC-Regular;
+  font-size: 0.7rem;
+  color: #4B4B4B;
+  letter-spacing: 0;
+  line-height: 1rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_order\.scss}line{font-family:\0000345}}
+.order-content .order-info .input-item p {
+  margin: 0;
+  height: 1.4rem;
+  line-height: 1.4rem;
+  width: 75%;
+  display: inline-block;
+  text-align: right;
+  font-family: PingFangSC-Regular;
+  font-size: 0.6rem;
+  color: #4B4B4B;
+  letter-spacing: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_order\.scss}line{font-family:\0000360}}
+.order-content .book-panel {
+  background: #FFFFFF;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_order\.scss}line{font-family:\0000366}}
+.order-content .book-panel .user-book-item .user-book-title {
+  height: 1.2rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_order\.scss}line{font-family:\0000368}}
+.order-content .book-panel .user-book-item .user-book-title p {
+  margin: 0;
+  height: 100%;
+  line-height: 1.2rem;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #4B4B4B;
+  letter-spacing: 0px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_order\.scss}line{font-family:\0000380}}
+.order-content .book-panel .user-book-item .book-item {
+  position: relative;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_order\.scss}line{font-family:\0000385}}
+.order-content .book-panel .user-book-item .book-item .book-img {
+  width: 2.75rem;
+  height: 4rem;
+  display: inline-block;
+  background: #F4F4F4;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_order\.scss}line{font-family:\0000392}}
+.order-content .book-panel .user-book-item .book-item .book-info {
+  position: absolute;
+  top: 0.5rem;
+  left: 3.25rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_order\.scss}line{font-family:\0000397}}
+.order-content .book-panel .user-book-item .book-item .book-info p {
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_order\.scss}line{font-family:\00003101}}
+.order-content .book-panel .user-book-item .book-item .book-info .book-name {
+  font-family: PingFangSC-Medium !important;
+  font-size: 0.7rem;
+  color: #4B4B4B;
+  letter-spacing: 0px;
+  line-height: 0.9rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_order\.scss}line{font-family:\00003109}}
+.order-content .book-panel .user-book-item .book-item .book-info .book-author {
+  opacity: 0.98;
+  font-family: PingFangSC-Light !important;
+  font-size: 0.6rem;
+  color: #4B4B4B;
+  letter-spacing: 0px;
+  line-height: 0.9rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_order\.scss}line{font-family:\00003118}}
+.order-content .book-panel .user-book-item .book-item .book-info .book-press {
+  opacity: 0.98;
+  font-family: PingFangSC-Light !important;
+  font-size: 0.5rem;
+  color: #4B4B4B;
+  letter-spacing: 0px;
+  line-height: 0.6rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_order\.scss}line{font-family:\00003127}}
+.order-content .book-panel .user-book-item .book-item .book-info .book-price {
+  font-family: PingFangSC-Regular;
+  font-size: 0.6rem;
+  color: #4B4B4B;
+  letter-spacing: 0px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_order\.scss}line{font-family:\00003135}}
+.order-content .book-panel .user-book-item .book-item .select-icon {
+  position: absolute;
+  right: 0;
+  display: block;
+  width: 0.7rem;
+  height: 0.7rem;
+  top: 50%;
+  margin-top: -0.35rem;
+  font-size: 0.7rem;
+  line-height: 0.7rem;
+  background: #e4e4e4;
+  border-radius: 50%;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_order\.scss}line{font-family:\00003151}}
+.order-content .book-panel .user-book-item .book-pick-info {
+  margin-left: 3.5rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_order\.scss}line{font-family:\00003153}}
+.order-content .book-panel .user-book-item .book-pick-info p {
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_order\.scss}line{font-family:\00003156}}
+.order-content .book-panel .user-book-item .book-pick-info .book-pick-method {
+  border-bottom: 1px solid #e4e4e4;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_order\.scss}line{font-family:\00003160}}
+.order-content .book-panel .user-book-item .book-pick-info .book-pick-addr span {
+  width: 80%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_order\.scss}line{font-family:\00003164}}
+.order-content .book-panel .user-book-item .book-pick-info .book-pick-method, .order-content .book-panel .user-book-item .book-pick-info .book-pick-addr {
+  margin: 0;
+  font-family: PingFangSC-Regular;
+  font-size: 0.6rem;
+  color: #999999;
+  letter-spacing: 0px;
+  min-height: 1.6rem;
+  line-height: 1.6rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_order\.scss}line{font-family:\00003173}}
+.order-content .book-panel .user-book-item .book-pick-info .book-pick-method span, .order-content .book-panel .user-book-item .book-pick-info .book-pick-addr span {
+  float: right;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_order\.scss}line{font-family:\00003182}}
+.order-footer-button {
+  height: 4rem;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_order\.scss}line{font-family:\00003188}}
+.order-footer-button > p {
+  font-family: PingFangSC-Regular;
+  font-size: 0.5rem;
+  color: #999999;
+  letter-spacing: 0;
+  height: 1rem;
+  line-height: 1rem;
+  margin-bottom: 0.5rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_order\.scss}line{font-family:\00003198}}
+.order-footer-button > div {
+  font-family: PingFangSC-Medium;
+  font-size: 0.8rem;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  line-height: 2.5rem;
+  height: 2.5rem;
+  background: #D56B54;
+  width: 100%;
+  text-align: center;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_order\.scss}line{font-family:\00003211}}
+.select-date-view {
+  background: transparent !important;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_order\.scss}line{font-family:\00003213}}
+.select-date-view .select-date-content {
+  width: 14rem;
+  height: 20rem;
+  background: #4B4B4B;
+  box-shadow: 6px 8px 7px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  margin-top: -10rem;
+  left: 50%;
+  margin-left: -7rem;
+  padding: 0.5rem 0.7rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_order\.scss}line{font-family:\00003227}}
+.select-date-view .select-date-content .date-div .date-period {
+  height: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_order\.scss}line{font-family:\00003230}}
+.select-date-view .select-date-content .date-div .date-period span {
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #FFFFFF;
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_order\.scss}line{font-family:\00003237}}
+.select-date-view .select-date-content .date-div .date-period .left {
+  width: 25%;
+  text-align: left;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_order\.scss}line{font-family:\00003244}}
+.select-date-view .select-date-content .date-div .date-period .right {
+  width: 75%;
+  text-align: center;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  background: #FFFFFF;
+  border-radius: 5px;
+  font-size: 0.6rem;
+  color: #4B4B4B;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_order\.scss}line{font-family:\00003256}}
+.select-date-view .select-date-content .date-div .date-text {
+  font-family: PingFangSC-Light !important;
+  font-size: 0.5rem;
+  color: #DDDDDD;
+  letter-spacing: 0;
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_order\.scss}line{font-family:\00003264}}
+.select-date-view .select-date-content .date-div .date-select-panel {
+  margin-top: 0.5rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_order\.scss}line{font-family:\00003266}}
+.select-date-view .select-date-content .date-div .date-select-panel .year-month {
+  text-align: center;
+  font-family: PingFangSC-Medium !important;
+  font-size: 0.6rem;
+  color: #999999;
+  line-height: 0.6rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_order\.scss}line{font-family:\00003274}}
+.select-date-view .select-date-content .date-div .date-select-panel table {
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_order\.scss}line{font-family:\00003278}}
+.select-date-view .select-date-content .date-div .date-select-panel table thead tr {
+  height: 0.8rem;
+  border-bottom: 1px solid #F4F4F4;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_order\.scss}line{font-family:\00003282}}
+.select-date-view .select-date-content .date-div .date-select-panel table thead th {
+  font-family: PingFangSC-Regular;
+  font-size: 0.5rem;
+  color: #999999;
+  line-height: 0.5rem;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_order\.scss}line{font-family:\00003292}}
+.select-date-view .select-date-content .date-div .date-select-panel table tbody tr {
+  height: 1.5rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_order\.scss}line{font-family:\00003295}}
+.select-date-view .select-date-content .date-div .date-select-panel table tbody td {
+  text-align: center;
+  font-family: PingFangSC-Regular;
+  font-size: 0.5rem;
+  color: #999999;
+  line-height: 1.5rem;
+  height: inherit;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_order\.scss}line{font-family:\00003304}}
+.select-date-view .select-date-content .date-div .date-select-panel table tbody .selected {
+  background: #ffffff;
+  border-radius: 0.5rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_order\.scss}line{font-family:\00003312}}
+.select-date-view .select-date-content .date-div .button-panel {
+  position: absolute;
+  width: 12.6rem;
+  bottom: 2rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_order\.scss}line{font-family:\00003317}}
+.select-date-view .select-date-content .date-div .button-panel > div {
+  display: inline-block;
+  width: 40%;
+  float: left;
+  text-align: center;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  margin-left: 5%;
+  margin-right: 5%;
+  background: #e4e4e4;
+  border-radius: 5px;
+  color: #999999;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_myOrders\.scss}line{font-family:\000031}}
+.myOrders-content {
+  background: #f4f4f4;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_myOrders\.scss}line{font-family:\000034}}
+.myOrders-content .status-bar {
+  height: 4rem;
+  background: #ffffff;
+  margin-bottom: 0.5rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_myOrders\.scss}line{font-family:\0000310}}
+.myOrders-content .status-bar .active {
+  color: #D56B54 !important;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_myOrders\.scss}line{font-family:\0000314}}
+.myOrders-content .status-bar .status-all {
+  width: 20%;
+  display: inline-block;
+  height: 4rem;
+  float: left;
+  padding-bottom: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  font-size: 0.6rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_myOrders\.scss}line{font-family:\0000325}}
+.myOrders-content .status-bar .status-list {
+  width: 80%;
+  display: inline-block;
+  height: 4rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_myOrders\.scss}line{font-family:\0000330}}
+.myOrders-content .status-bar .status-list .status-item {
+  display: inline-block;
+  width: 25%;
+  float: left;
+  height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  font-size: 0.6rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_myOrders\.scss}line{font-family:\0000343}}
+.myOrders-content .order-item {
+  background: #fff;
+  padding: 0.6rem 0.8rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_myOrders\.scss}line{font-family:\0000349}}
+.myOrders-content .order-item .book-info-panel {
+  margin-bottom: 0.7rem;
+  min-height: 4rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_myOrders\.scss}line{font-family:\0000354}}
+.myOrders-content .order-item .book-info-panel .book-item img {
+  position: absolute;
+  background: #F4F4F4;
+  width: 2.75rem;
+  height: 4rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_myOrders\.scss}line{font-family:\0000360}}
+.myOrders-content .order-item .book-info-panel .book-item .book-info {
+  height: inherit;
+  margin-left: 3.2rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_myOrders\.scss}line{font-family:\0000363}}
+.myOrders-content .order-item .book-info-panel .book-item .book-info .book-name {
+  font-family: PingFangSC-Medium !important;
+  font-size: 0.7rem;
+  color: #4B4B4B;
+  letter-spacing: 0;
+  line-height: 0.9rem;
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_myOrders\.scss}line{font-family:\0000371}}
+.myOrders-content .order-item .book-info-panel .book-item .book-info .book-author {
+  opacity: 0.98;
+  font-family: PingFangSC-Light !important;
+  font-size: 0.6rem;
+  color: #4B4B4B;
+  letter-spacing: 0;
+  line-height: 0.8rem;
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_myOrders\.scss}line{font-family:\0000380}}
+.myOrders-content .order-item .book-info-panel .book-item .book-info .book-press {
+  opacity: 0.98;
+  font-family: PingFangSC-Light !important;
+  font-size: 0.5rem;
+  color: #4B4B4B;
+  letter-spacing: 0;
+  line-height: 0.6rem;
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_myOrders\.scss}line{font-family:\0000390}}
+.myOrders-content .order-item .book-info-panel .book-item .book-info .book-price {
+  font-family: PingFangSC-Regular;
+  font-size: 0.6rem;
+  color: #4B4B4B;
+  letter-spacing: 0;
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_myOrders\.scss}line{font-family:\00003101}}
+.myOrders-content .order-item .button-panel {
+  margin-bottom: 0.7rem;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_myOrders\.scss}line{font-family:\00003104}}
+.myOrders-content .order-item .button-panel button {
+  width: 4.5rem;
+  height: 1.5rem;
+  font-size: 0.7rem;
+  font-family: PingFangSC-Regular;
+  border-radius: 2px;
+  letter-spacing: 0;
+  line-height: 0.7rem;
+  margin-right: 0.325rem;
+  margin-left: 0.325rem;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_myOrders\.scss}line{font-family:\00003116}}
+.myOrders-content .order-item .button-panel .contact-us, .myOrders-content .order-item .button-panel .cancel-order {
+  background: #FFFFFF;
+  border: 1px solid #999999;
+  color: #4B4B4B;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_myOrders\.scss}line{font-family:\00003122}}
+.myOrders-content .order-item .button-panel .pay-now {
+  background: #D56B54;
+  border-radius: 2px;
+  border: none !important;
+  font-family: PingFangSC-Regular;
+  color: #FFFFFF;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_myOrders\.scss}line{font-family:\00003131}}
+.myOrders-content .order-item .time-panel {
+  font-family: PingFangSC-Light !important;
+  font-size: 0.6rem;
+  color: #4B4B4B;
+  letter-spacing: 0;
+  line-height: 0.8rem;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_myOrders\.scss}line{font-family:\00003140}}
+.myOrders-content .order-item .total-amount {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.8rem;
+  font-family: PingFangSC-Regular;
+  font-size: 0.7rem;
+  color: #D56B54;
+  letter-spacing: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_orderDetail\.scss}line{font-family:\000031}}
+.orderDetail-content {
+  padding-bottom: 4rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_orderDetail\.scss}line{font-family:\000035}}
+.orderDetail-content .address-info, .orderDetail-content .order-info {
+  background-color: #ffffff;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_orderDetail\.scss}line{font-family:\0000310}}
+.orderDetail-content .address-info .input-item, .orderDetail-content .order-info .input-item {
+  padding: 0.2rem 0;
+  min-height: 1.8rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_orderDetail\.scss}line{font-family:\0000313}}
+.orderDetail-content .address-info .input-item label, .orderDetail-content .order-info .input-item label {
+  width: 25%;
+  display: inline-block;
+  font-family: PingFangSC-Regular;
+  font-size: 0.7rem;
+  color: #999999;
+  letter-spacing: 0;
+  line-height: 1.4rem;
+  height: 1.4rem;
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_orderDetail\.scss}line{font-family:\0000325}}
+.orderDetail-content .address-info .input-item input, .orderDetail-content .address-info .input-item textarea, .orderDetail-content .order-info .input-item input, .orderDetail-content .order-info .input-item textarea {
+  width: 75%;
+  display: inline-block;
+  outline: none;
+  border: none;
+  min-height: 1.4rem;
+  padding: 0;
+  margin: 0;
+  font-family: PingFangSC-Regular;
+  font-size: 0.7rem;
+  color: #4B4B4B;
+  letter-spacing: 0;
+  line-height: 1rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_orderDetail\.scss}line{font-family:\0000339}}
+.orderDetail-content .address-info .input-item input[disabled], .orderDetail-content .order-info .input-item input[disabled] {
+  background-color: #ffffff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_orderDetail\.scss}line{font-family:\0000347}}
+.orderDetail-content .order-info .input-item p {
+  margin: 0;
+  height: 1.4rem;
+  line-height: 1.4rem;
+  width: 75%;
+  display: inline-block;
+  text-align: right;
+  font-family: PingFangSC-Regular;
+  font-size: 0.6rem;
+  color: #4B4B4B;
+  letter-spacing: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_orderDetail\.scss}line{font-family:\0000362}}
+.orderDetail-content .book-panel {
+  background: #FFFFFF;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_orderDetail\.scss}line{font-family:\0000368}}
+.orderDetail-content .book-panel .user-book-item .user-book-title {
+  height: 1.2rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_orderDetail\.scss}line{font-family:\0000370}}
+.orderDetail-content .book-panel .user-book-item .user-book-title p {
+  margin: 0;
+  height: 100%;
+  line-height: 1.2rem;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #4B4B4B;
+  letter-spacing: 0px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_orderDetail\.scss}line{font-family:\0000382}}
+.orderDetail-content .book-panel .user-book-item .book-item {
+  position: relative;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_orderDetail\.scss}line{font-family:\0000387}}
+.orderDetail-content .book-panel .user-book-item .book-item .book-img {
+  width: 2.75rem;
+  height: 4rem;
+  display: inline-block;
+  background: #F4F4F4;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_orderDetail\.scss}line{font-family:\0000394}}
+.orderDetail-content .book-panel .user-book-item .book-item .book-info {
+  position: absolute;
+  top: 0.5rem;
+  left: 3.25rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_orderDetail\.scss}line{font-family:\0000399}}
+.orderDetail-content .book-panel .user-book-item .book-item .book-info p {
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_orderDetail\.scss}line{font-family:\00003103}}
+.orderDetail-content .book-panel .user-book-item .book-item .book-info .book-name {
+  font-family: PingFangSC-Medium !important;
+  font-size: 0.7rem;
+  color: #4B4B4B;
+  letter-spacing: 0px;
+  line-height: 0.9rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_orderDetail\.scss}line{font-family:\00003111}}
+.orderDetail-content .book-panel .user-book-item .book-item .book-info .book-author {
+  opacity: 0.98;
+  font-family: PingFangSC-Light !important;
+  font-size: 0.6rem;
+  color: #4B4B4B;
+  letter-spacing: 0px;
+  line-height: 0.9rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_orderDetail\.scss}line{font-family:\00003120}}
+.orderDetail-content .book-panel .user-book-item .book-item .book-info .book-press {
+  opacity: 0.98;
+  font-family: PingFangSC-Light !important;
+  font-size: 0.5rem;
+  color: #4B4B4B;
+  letter-spacing: 0px;
+  line-height: 0.6rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_orderDetail\.scss}line{font-family:\00003129}}
+.orderDetail-content .book-panel .user-book-item .book-item .book-info .book-price {
+  font-family: PingFangSC-Regular;
+  font-size: 0.6rem;
+  color: #4B4B4B;
+  letter-spacing: 0px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_orderDetail\.scss}line{font-family:\00003137}}
+.orderDetail-content .book-panel .user-book-item .book-item .select-icon {
+  position: absolute;
+  right: 0;
+  display: block;
+  width: 0.7rem;
+  height: 0.7rem;
+  top: 50%;
+  margin-top: -0.35rem;
+  font-size: 0.7rem;
+  line-height: 0.7rem;
+  background: #e4e4e4;
+  border-radius: 50%;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_orderDetail\.scss}line{font-family:\00003153}}
+.orderDetail-content .book-panel .user-book-item .book-pick-info {
+  margin-left: 3.5rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_orderDetail\.scss}line{font-family:\00003155}}
+.orderDetail-content .book-panel .user-book-item .book-pick-info p {
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_orderDetail\.scss}line{font-family:\00003158}}
+.orderDetail-content .book-panel .user-book-item .book-pick-info .book-pick-method {
+  border-bottom: 1px solid #e4e4e4;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_orderDetail\.scss}line{font-family:\00003162}}
+.orderDetail-content .book-panel .user-book-item .book-pick-info .book-pick-addr span {
+  width: 80%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_orderDetail\.scss}line{font-family:\00003166}}
+.orderDetail-content .book-panel .user-book-item .book-pick-info .book-pick-method, .orderDetail-content .book-panel .user-book-item .book-pick-info .book-pick-addr {
+  margin: 0;
+  font-family: PingFangSC-Regular;
+  font-size: 0.6rem;
+  color: #999999;
+  letter-spacing: 0px;
+  min-height: 1.6rem;
+  line-height: 1.6rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_orderDetail\.scss}line{font-family:\00003175}}
+.orderDetail-content .book-panel .user-book-item .book-pick-info .book-pick-method span, .orderDetail-content .book-panel .user-book-item .book-pick-info .book-pick-addr span {
+  float: right;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_orderDetail\.scss}line{font-family:\00003184}}
+.od-footer-button {
+  position: fixed;
+  border: 0;
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 0 0 0 0 rgba(153, 153, 153, 0.5);
+  bottom: 0;
+  height: 2.5rem;
+  padding: 0 0.6rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_orderDetail\.scss}line{font-family:\00003194}}
+.od-footer-button button {
+  background: #FFFFFF;
+  border: 1px solid #999999;
+  border-radius: 2px;
+  width: 4.5rem;
+  height: 1.5rem;
+  margin: 0.5rem 0.6rem;
+  font-family: PingFangSC-Regular;
+  font-size: 0.7rem;
+  color: #4B4B4B;
+  letter-spacing: 0;
+  line-height: 0.7rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_orderDetail\.scss}line{font-family:\00003207}}
+.od-footer-button .pay-now {
+  position: absolute;
+  right: -0.6rem;
+  border: none;
+  top: 0;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  padding: 0;
+  margin: 0;
+  width: 6rem;
+  background: #D56B54;
+  border-radius: 0;
+  color: #fff;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_returnBook\.scss}line{font-family:\000038}}
+.returnBook-footer-button div:nth-child(2) {
+  background: #D56B54;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_continueOrder\.scss}line{font-family:\000033}}
+.continueOrder-content .book-panel {
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_continueOrder\.scss}line{font-family:\000037}}
+.continueOrder-content .continueItems-panel {
+  background: #FFF;
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_continueOrder\.scss}line{font-family:\0000311}}
+.continueOrder-content .continueItems-panel .selected {
+  border-color: #D56B54 !important;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_continueOrder\.scss}line{font-family:\0000314}}
+.continueOrder-content .continueItems-panel .selected i {
+  display: block !important;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_continueOrder\.scss}line{font-family:\0000320}}
+.continueOrder-content .continueItems-panel .item {
+  background: #FFF;
+  width: 45%;
+  margin: 0.5rem 2.5%;
+  display: inline-block;
+  float: left;
+  font-family: PingFangSC-Regular;
+  font-size: 0.7rem;
+  color: #4B4B4B;
+  letter-spacing: -0.25px;
+  border-radius: 4px;
+  border: 1px solid #999999;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/order\/_continueOrder\.scss}line{font-family:\0000333}}
+.continueOrder-content .continueItems-panel .item i {
+  background-image: url(../../images/icons/order/check_circle_green@2x.png);
+  background-size: contain;
+  position: absolute;
+  width: 0.9rem;
+  height: 0.9rem;
+  top: 50%;
+  margin-top: -0.45rem;
+  right: 0.5rem;
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\0000326}}
 [nav-bar-transition="ios"] [nav-bar="active"],
 [nav-bar-transition="ios"] [nav-bar="entering"] {
   z-index: 10;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\0000324}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\0000330}}
 [nav-bar-transition="ios"] [nav-bar="active"] .bar,
 [nav-bar-transition="ios"] [nav-bar="entering"] .bar {
   background-color: #1f1f21 !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\0000331}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\0000337}}
 * {
   font-family: "OpenSans", "PingFangSC-Regular" !important;
   color: #1f1f21;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\0000336}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\0000342}}
 .bar .title {
   line-height: 1.2rem !important;
 }
@@ -13236,7 +14250,7 @@ html {
 /*ion-view{
   background-color: $g-bg-color;
 }*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\0000348}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\0000354}}
 .common-btn {
   border: none;
   outline: none;
@@ -13248,172 +14262,172 @@ html {
   padding: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\0000359}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\0000365}}
 .common-bg {
   background-color: white;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\0000363}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\0000369}}
 .special-bg {
   background-color: #2ed0d3;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\0000367}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\0000373}}
 .white-color {
   color: white !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\0000371}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\0000377}}
 .black-color {
   color: #1f1f21 !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\0000375}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\0000381}}
 .black-color .title {
   color: #fff;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\0000379}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\0000385}}
 .margin-left6rem {
   margin-left: 6rem;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\0000383}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\0000389}}
 .margin-left525rem {
   margin-left: 5.25rem !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\0000387}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\0000393}}
 .margin-left680rem {
   margin-left: 6.8rem !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\0000391}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\0000397}}
 .bar .title {
   top: auto !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\0000395}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003101}}
 .border-none {
   border: none !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\0000399}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003105}}
 .bg-white {
   background: #fff !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003103}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003109}}
 .bg-red {
   background-color: #d0021b !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003107}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003113}}
 .bg-black {
   background: #444a59;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003111}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003117}}
 .bg-blue {
   background: #2ed0d3;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003115}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003121}}
 .bg-orange {
   background: #f29a0c !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003119}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003125}}
 .bg-green {
   background: #06e556 !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003123}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003129}}
 .bg-yellow {
   background-color: #ffee00;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003127}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003133}}
 .bg-gray {
   background-color: #8f939c;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003131}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003137}}
 .bg-light-yellow {
   background: #fffef4;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003135}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003141}}
 .color-gray {
   color: #f0f0f0 !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003139}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003145}}
 .color-yellow {
   color: #ffee00 !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003143}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003149}}
 .color-orange {
   color: #ff9502 !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003147}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003153}}
 .color-white {
   color: white;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003151}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003157}}
 .color-white-imp {
   color: white !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003155}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003161}}
 .color-black {
   color: #444a59 !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003159}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003165}}
 .height2rem {
   height: 2rem;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003163}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003169}}
 .height3rem {
   height: 3rem;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003166}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003172}}
 .height3-5rem {
   height: 3.5rem;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003169}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003175}}
 .height31-5 {
   height: 1.575rem;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003173}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003179}}
 .height36-5 {
   height: 1.825rem;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003177}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003183}}
 .margin-bottom085 {
   margin-bottom: 0.85rem !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003181}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003187}}
 .margin-left121rem {
   padding-left: 1.21rem;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003185}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003191}}
 .margin-top1125rem {
   margin-top: 1.125rem;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003189}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003195}}
 .delete-icon {
   background-image: url("../images/icons/trash-white@2x.png");
   background-repeat: no-repeat;
@@ -13424,33 +14438,33 @@ html {
   background-size: contain;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003200}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003206}}
 textarea {
   resize: none !important;
   padding-bottom: 1rem;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003205}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003211}}
 .position-absolute {
   position: absolute !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003209}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003215}}
 .padding-top-1rem {
   padding-top: 1rem !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003213}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003219}}
 .padding-top-0625rem {
   padding-top: 0.625rem !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003217}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003223}}
 .border-top-gray {
   border-top: 1px solid #f2f2f2 !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003221}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003227}}
 .common-radio {
   display: inline-block;
   color: #8f939c;
@@ -13460,7 +14474,7 @@ textarea {
   font-size: 0.7rem !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003230}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003236}}
 .color-blue {
   color: #2ed0d3 !important;
   background-image: url("../images/icons/Arrow_right@2x.png");
@@ -13468,66 +14482,66 @@ textarea {
   background-size: contain;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003237}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003243}}
 .color-black {
   color: #1f1f21 !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003241}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003247}}
 img {
   border: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003245}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003251}}
 .row {
   overflow: hidden;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003247}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003253}}
 .row .no-gutter {
   margin-left: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003250}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003256}}
 .row .no-gutter .col-20 {
   width: 20%;
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003256}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003262}}
 .row .col-20 {
   width: 16%;
   margin-left: 4%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003261}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003267}}
 .row .col-80 {
   width: 76%;
   margin-left: 4%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003266}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003272}}
 .row .col-20-per {
   width: 20%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003271}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003277}}
 .row > [class*=col-], .row > [class*=tablet-] {
   box-sizing: border-box;
   float: left;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003276}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003282}}
 .class-table {
   display: table;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003280}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003286}}
 .class-table-cell {
   display: table-cell;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003284}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003290}}
 .opacity-3 {
   opacity: 0.3;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003288}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003294}}
 .transform120 {
   transform: rotate(120deg);
   -ms-transform: rotate(120deg);
@@ -13536,7 +14550,7 @@ img {
   -o-transform: rotate(120deg);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003296}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003302}}
 .transform150 {
   transform: rotate(150deg);
   -ms-transform: rotate(150deg);
@@ -13545,12 +14559,12 @@ img {
   -o-transform: rotate(150deg);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003304}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003310}}
 .radial-progress {
   position: relative;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003310}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003316}}
 .circle {
   height: 75px;
   width: 75px;
@@ -13560,12 +14574,12 @@ img {
   border-radius: 50%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003323}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003329}}
 .mask {
   clip: rect(0, 75px, 75px, 37.5px);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003329}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003335}}
 .mask, .fill {
   width: 75px;
   height: 75px;
@@ -13575,12 +14589,12 @@ img {
   border-radius: 50%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003340}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003346}}
 .fill {
   clip: rect(0, 37.5px, 75px, 0);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003347}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003353}}
 .inset {
   width: 65px;
   height: 65px;
@@ -13596,7 +14610,7 @@ img {
   font-family: PingFangSC-Regular !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003369}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003375}}
 .common-back-btn {
   line-height: 2.2rem !important;
   width: 2.2rem;
@@ -13605,32 +14619,32 @@ img {
   top: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003377}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003383}}
 .width3rem {
   width: 3rem !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003381}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003387}}
 .width5rem {
   width: 5rem !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003385}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003391}}
 .width16rem {
   width: 1.6rem !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003389}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003395}}
 .width100 {
   width: 100% !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003393}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003399}}
 .height105rem {
   height: 10.5rem !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003401}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003407}}
 .toast-bg-block {
   position: fixed;
   height: 100%;
@@ -13640,13 +14654,13 @@ img {
   opacity: 0.7;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003410}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003416}}
 .toast-container {
   width: 280px;
   z-index: 9999;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003415}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003421}}
 .toast-item-title {
   margin-bottom: 21px;
   text-align: center;
@@ -13654,7 +14668,7 @@ img {
   font-family: PingFangSC-Medium !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003422}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003428}}
 .toast-item-button {
   text-align: center;
   color: #06e556;
@@ -13665,7 +14679,7 @@ img {
   padding-bottom: 9.5px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003432}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003438}}
 .toast-item-button1 {
   width: 50%;
   display: inline-block;
@@ -13676,7 +14690,7 @@ img {
   font-family: PingFangSC-Medium !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003442}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003448}}
 .toast-item-button2 {
   width: 50%;
   display: inline-block;
@@ -13687,28 +14701,28 @@ img {
   font-family: PingFangSC-Medium !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003452}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003458}}
 .toast-btn-red {
   background-color: #d0021b !important;
   border-top: 1px solid #d0021b !important;
   color: white !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003458}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003464}}
 .toast-btn-orange {
   background-color: #f29a0c !important;
   border-top: 1px solid #f29a0c !important;
   color: white !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003464}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003470}}
 .toast-btn-blue {
   background-color: #2ed0d3 !important;
   border-top: 1px solid #2ed0d3 !important;
   color: white !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003470}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003476}}
 .toast-item-content {
   font-size: 13px;
   font-family: PingFangSC-Regular !important;
@@ -13716,18 +14730,18 @@ img {
   margin: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003477}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003483}}
 * html .toast-container {
   position: absolute;
   z-index: 100;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003482}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003488}}
 .toast-item-confirm {
   border-bottom: none !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003486}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003492}}
 .toast-item {
   height: auto;
   background: white;
@@ -13741,7 +14755,7 @@ img {
   border-bottom: 4px solid #06e556;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003506}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003512}}
 .toast-item p {
   padding: 0 15px;
   margin: 0;
@@ -13751,7 +14765,7 @@ img {
   font-family: PingFangSC-Regular !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003518}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003524}}
 .toast-item-close {
   background: url(../images/close.gif);
   width: 22px;
@@ -13761,7 +14775,7 @@ img {
   right: 7px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003527}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003533}}
 .toast-item-image {
   width: 32px;
   height: 32px;
@@ -13771,22 +14785,22 @@ img {
   left: 10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003536}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003542}}
 .toast-item-image-notice {
   background: url(../images/notice.png);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003540}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003546}}
 .toast-item-image-success {
   background: url(../images/success.png);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003544}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003550}}
 .toast-item-image-warning {
   background: url(../images/warning.png);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003548}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003554}}
 .toast-item-image-error {
   background: url(../images/error.png);
 }
@@ -13798,23 +14812,23 @@ img {
  * where 'value' is the real value of the plugin option 'type'
  *
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003559}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003565}}
 .toast-type-notice {
   color: white;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003563}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003569}}
 .toast-type-success {
   color: white;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003567}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003573}}
 .toast-type-warning {
   color: white;
   border-color: #FCBD57;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003572}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003578}}
 .toast-type-error {
   color: white;
   border-color: #B32B2B;
@@ -13827,14 +14841,14 @@ img {
  * where 'value' is the real value of the plugin option 'position'
  *
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003584}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003590}}
 .toast-position-top-left {
   position: fixed;
   left: 20px;
   top: 20px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003590}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003596}}
 .toast-position-top-center {
   position: fixed;
   top: 20px;
@@ -13842,14 +14856,14 @@ img {
   margin-left: -140px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003597}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003603}}
 .toast-position-top-right {
   position: fixed;
   top: 20px;
   right: 20px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003603}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003609}}
 .toast-position-middle-left {
   position: fixed;
   left: 20px;
@@ -13857,7 +14871,7 @@ img {
   margin-top: -40px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003610}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003616}}
 .toast-position-middle-center {
   position: fixed;
   left: 50%;
@@ -13866,7 +14880,7 @@ img {
   top: 50%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003618}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003624}}
 .toast-position-middle-right {
   position: fixed;
   right: 20px;
@@ -13875,49 +14889,49 @@ img {
   top: 50%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003626}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003632}}
 .toast-item-wrapper {
   position: absolute;
   top: 0;
   width: 100%;
   pointer-events: auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003632}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003638}}
 .toast-item-wrapper .toast-item-image {
   display: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003635}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003641}}
 .toast-item-wrapper .toast-item-close {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003640}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003646}}
 .margintop0 {
   margin-top: 0 !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003644}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003650}}
 .margintop1rem {
   margin-top: 1rem;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003648}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003654}}
 .modal {
   background: rgba(50, 55, 66, 0.9);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003652}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003658}}
 label, input, button, select, textarea {
   /*font-size: 0.7rem;*/
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003656}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003662}}
 .button-positive {
   background-color: #2ed0d3 !important;
   border-color: #2ed0d3 !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003661}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003667}}
 .cmn-checked {
   background-image: url("../images/checkBox/check_green@2x.png");
   background-repeat: no-repeat;
@@ -13931,7 +14945,7 @@ label, input, button, select, textarea {
   right: 1rem;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003675}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003681}}
 .cmn-unchecked {
   background-image: url("../images/checkBox/check_gray@2x.png");
   background-repeat: no-repeat;
@@ -13945,7 +14959,7 @@ label, input, button, select, textarea {
   right: 1rem;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003689}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003695}}
 .location-icon {
   background-image: url("../images/base/Location-pin-simple-line-icons@2x.png");
   background-repeat: no-repeat;
@@ -13959,7 +14973,7 @@ label, input, button, select, textarea {
   margin-top: -0.35rem;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003703}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003709}}
 .bg-back {
   position: absolute;
   top: 0;
@@ -13969,22 +14983,27 @@ label, input, button, select, textarea {
   z-index: 990;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003712}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003718}}
 .display-none {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003716}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003722}}
 .display-block {
   display: block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003720}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003726}}
 .ocra-font {
   font-family: OcraExtended !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003724}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003730}}
+.border-bottom-gray {
+  border-bottom: 1px solid #e4e4e4;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shihao\/Documents\/Presto\/presto-web-app\/app\/styles\/main\.scss}line{font-family:\00003734}}
 .border-bottom-radius {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
