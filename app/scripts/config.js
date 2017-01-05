@@ -4,7 +4,8 @@
 "use strict";
 presto.CONFIG
   .constant('ENV', {
-    baseUrl: 'http://localhost:8080/'
+    //baseUrl: 'http://localhost:8080/'
+    baseUrl: 'http://http://120.76.52.196:7777/'
   })
   .constant('PlantBookMethod',{
     qrcode:0, //扫码植书
