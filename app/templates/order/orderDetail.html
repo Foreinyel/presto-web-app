@@ -56,7 +56,7 @@
     </div>
   </ion-content>
   <div class="od-footer-button">
-    <button>联系客服</button>
+    <!--<button>联系客服</button>-->
     <button ng-if="order.status == 20">退款</button>
     <button class="pay-now" ng-click="goReturnBook(order)" ng-if="order.status == 50">填写单号</button>
     <button class="pay-now" ng-if="order.status == 10" ng-click="orderPay()">立即付款</button>

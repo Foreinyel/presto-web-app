@@ -4,7 +4,7 @@
       <div class="user-book-title">
         <p>{{ub.userName || '匿名用户'}}</p>
       </div>
-      <div class="book-item" ng-repeat="b in ub.bookItem" ng-click="selectBookItem(b)">
+      <div class="book-item" ng-repeat="b in ub.bookItem track by $index" ng-click="selectBookItem(b)">
         <div class="book-img">
           <img>
         </div>

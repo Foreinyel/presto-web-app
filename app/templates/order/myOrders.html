@@ -31,7 +31,7 @@
         </div>
       </div>
       <div class="button-panel">
-        <button class="contact-us">联系客服</button>
+        <!--<button class="contact-us">联系客服</button>-->
         <button class="cancel-order" ng-if="o.status == 10">取消订单</button>
         <button class="pay-now" ng-click="goReturnBook(o,$event)" ng-if="o.status == 50">填写单号</button>
         <button class="pay-now" ng-if="o.status == 10" ng-click="orderPay(o,$event)">立即付款</button>

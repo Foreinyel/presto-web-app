@@ -1,5 +1,45 @@
 .home-content{
   background: #F4F4F4;
+
+  .head-label{
+    background-color: #FFFFFF;
+    border-width:0;
+    padding-left: 3rem;
+    padding-right: 2.5rem;
+
+    .city-name{
+      position: absolute;
+      left: 0.9rem;
+      font-family: PingFangSC-Regular;
+      font-size: 0.7rem;
+      color: #4B4B4B;
+      letter-spacing: 0px;
+      line-height: 0.7rem;
+      background-image: url("../images/icons/home/Scan_QRcode@2x.png");
+      -webkit-background-size:contain;
+      background-size:contain;
+      display: block;
+      width:1.2rem;
+      height:1.2rem;
+    }
+
+    .book-package{
+      position: absolute;
+      right:0.6rem;
+      background-image: url("../images/icons/home/book-package@2x.png");
+      -webkit-background-size:contain;
+      background-size:contain;
+      display: block;
+      width:1.2rem;
+      height:1.2rem;
+    }
+
+
+    .home-search-bar{
+      padding-left:0.5rem;
+      border-radius: 4px;
+    }
+  }
 }
 
 .i-want-panel{

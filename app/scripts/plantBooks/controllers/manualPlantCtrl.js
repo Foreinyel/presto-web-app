@@ -32,14 +32,14 @@ presto.CONTROLLERS
         CommonToasts.showAlert("书名不能为空!");
         return;
       }
-      if (!param.bookAuthor) {
+      /*if (!param.bookAuthor) {
         CommonToasts.showAlert("作者不能为空!");
         return;
       }
       if (!param.bookPress) {
         CommonToasts.showAlert("出版社不能为空!");
         return;
-      }
+      }*/
       if (!param.bookIsbn) {
         CommonToasts.showAlert("ISBN不能为空!");
         return;

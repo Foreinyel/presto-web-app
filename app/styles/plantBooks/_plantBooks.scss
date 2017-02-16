@@ -5,15 +5,22 @@
   .logo-panel{
     height:12.15rem;
     width:100%;
-    padding-top:2.8rem;
+    padding-top:8rem;
+
+    background-image: url("../images/icons/home/Donate_Background_App.jpg");
+    background-size: contain;
 
     .logo-div{
-      width:3rem;
-      height:3rem;
+      width:6.5rem;
+      height:2.3rem;
       //margin-top:2.8rem;
       margin-left:auto;
       margin-right:auto;
-      background-color: #ffffff;
+
+      background-image: url("../images/icons/plantBooks/LOGO.png");
+      -webkit-background-size:contain;
+      background-size:contain;
+      background-repeat: no-repeat;
     }
 
     .logo-text{
